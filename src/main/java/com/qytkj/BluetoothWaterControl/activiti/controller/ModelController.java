@@ -62,7 +62,8 @@ public class ModelController extends BaseController {
         return pageUtil;
     }
 
-    @RequestMapping("/model/add")
+    @SuppressWarnings("deprecation")
+	@RequestMapping("/model/add")
     public void newModel(HttpServletResponse response) throws UnsupportedEncodingException {
 
         //初始化一个空模型
@@ -90,8 +91,7 @@ public class ModelController extends BaseController {
         editorNode.put("id", "canvas");
         editorNode.put("resourceId", "canvas");
         ObjectNode stencilSetNode = objectMapper.createObjectNode();
-        stencilSetNode.put("namespace",
-                "http://b3mn.org/stencilset/bpmn2.0#");
+        stencilSetNode.put("namespace","http://b3mn.org/stencilset/bpmn2.0#");
         editorNode.put("stencilset", stencilSetNode);
         repositoryService.addModelEditorSource(id, editorNode.toString().getBytes("utf-8"));
         try {
@@ -101,7 +101,8 @@ public class ModelController extends BaseController {
         }
     }
 
-    @GetMapping(value = "/model/{modelId}/json")
+    @SuppressWarnings("deprecation")
+	@GetMapping(value = "/model/{modelId}/json")
     public ObjectNode getEditorJson(@PathVariable String modelId) {
         ObjectNode modelNode = null;
         Model model = repositoryService.getModel(modelId);

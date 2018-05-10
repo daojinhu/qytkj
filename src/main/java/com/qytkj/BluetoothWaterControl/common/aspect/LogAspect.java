@@ -27,7 +27,8 @@ import com.qytkj.BluetoothWaterControl.common.utils.JSONUtils;
 @Aspect
 @Component
 public class LogAspect {
-    private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
+    @SuppressWarnings("unused")
+	private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
 
     @Autowired
     LogService logService;

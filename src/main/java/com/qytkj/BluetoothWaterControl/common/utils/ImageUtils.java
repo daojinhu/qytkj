@@ -8,7 +8,6 @@ import javax.imageio.ImageReader;
 import javax.imageio.stream.ImageInputStream;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Iterator;
@@ -28,7 +27,8 @@ public class ImageUtils {
      * @throws IOException
      * @date
      */
-    public static BufferedImage cutImage(MultipartFile file, int x, int y, int w, int h,String prefix) {
+    @SuppressWarnings("rawtypes")
+	public static BufferedImage cutImage(MultipartFile file, int x, int y, int w, int h,String prefix) {
 
         Iterator iterator = ImageIO.getImageReadersByFormatName(prefix);
         try {

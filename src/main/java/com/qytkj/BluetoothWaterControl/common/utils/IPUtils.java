@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import javax.servlet.http.HttpServletRequest;
 
 public class IPUtils {
+	@SuppressWarnings("unused")
 	private static Logger logger = LoggerFactory.getLogger(IPUtils.class);
 
 	/**

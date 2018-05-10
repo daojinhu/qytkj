@@ -17,7 +17,6 @@ import java.sql.SQLException;
 /**
  * Created by PrimaryKey on 17/2/4.
  */
-@SuppressWarnings("AlibabaRemoveCommentedCode")
 @Configuration
 public class DruidDBConfig {
     private Logger logger = LoggerFactory.getLogger(DruidDBConfig.class);
