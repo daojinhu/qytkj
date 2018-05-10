@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qytkj.BluetoothWaterControl.operation.dao.OperUserDao">
+	<!-- 根据登录名和密码查询用户 -->
+	<select id="findUserByAccountAndPass" resultType="com.qytkj.BluetoothWaterControl.operation.domain.OperUserDO">
+		select 
+			id,
+			vchrAccount,
+			vchrPassword,
+			intStatus,
+			vchrNickname,
+			decAccountBalance,
+			vchrAddress,
+			createTime,
+			updateTime
+		from yw_tblUser
+		where vchrAccount = #{account} AND vchrPassword = #{password}
+	</select>
+	
+	<!-- 获取运维账户信息 -->
+	<select id="queryOperUser" resultType="com.qytkj.BluetoothWaterControl.operation.domain.OperUserDO">
+		select id,
+			vchrAccount,
+			vchrPassword,
+			intStatus,
+			vchrNickname,
+			decAccountBalance,
+			vchrAddress,
+			createTime,
+			updateTime
+		from yw_tblUser
+	</select>
+	
+	<!-- 获取所有学校名称 -->
+	<select id="queryAddress" resultType="com.qytkj.BluetoothWaterControl.operation.domain.OperAddressDO">
+		select id,vchrAddress from yw_tblAddress
+	</select>
+	
+	<!-- 修改运维账户密码 -->
+	<update id="updatePassword" parameterType="com.qytkj.BluetoothWaterControl.operation.domain.OperUserDO">
+		update yw_tblUser
+		<set>
+			<if test="password != null">vchrPassword = #{password}</if>
+		</set>
+		where vchrAccount = #{account}
+	</update>
+	
+	
+</mapper>
