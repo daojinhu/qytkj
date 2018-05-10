@@ -41,7 +41,8 @@ public class ActTaskServiceImpl implements ActTaskService {
     @Autowired
     RepositoryService repositoryService;
 
-    @Autowired
+    @SuppressWarnings("unused")
+	@Autowired
     private ProcessEngineFactoryBean processEngineFactory;
 
     @Autowired
@@ -50,7 +51,8 @@ public class ActTaskServiceImpl implements ActTaskService {
     @Autowired
     private HistoryService historyService;
 
-    @Override
+    @SuppressWarnings("unused")
+	@Override
     public List<ActivitiDO> listTodo(ActivitiDO act) {
         String userId = String.valueOf(ShiroUtils.getUserId());
         List<ActivitiDO> result = new ArrayList<ActivitiDO>();
@@ -87,7 +89,8 @@ public class ActTaskServiceImpl implements ActTaskService {
         taskService.complete(taskId, vars);
     }
 
-    @Override
+    @SuppressWarnings("unused")
+	@Override
     public void complete(String taskId, Map<String, Object> vars) {
         // 2.1根据人物ID查询流程实力ID
         Task task = taskService.createTaskQuery()
@@ -113,7 +116,8 @@ public class ActTaskServiceImpl implements ActTaskService {
      * @param vars          流程变量
      * @return 流程实例ID
      */
-    @Override
+    @SuppressWarnings({ "unchecked", "unused", "rawtypes" })
+	@Override
     public String startProcess(String procDefKey, String businessTable, String businessId, String title, Map<String, Object> vars) {
         String userId = ShiroUtils.getUser().getUsername();//ObjectUtils.toString(UserUtils.getUser().getId())
 
@@ -162,7 +166,8 @@ public class ActTaskServiceImpl implements ActTaskService {
         return formKey;
     }
 
-    @Override
+    @SuppressWarnings("unused")
+	@Override
     public InputStream tracePhoto(String xx, String pProcessInstanceId) {
 ////		ProcessInstance processInstance = runtimeService.createProcessInstanceQuery().processInstanceId(executionId).singleResult();
 //        BpmnModel bpmnModel = repositoryService.getBpmnModel(processDefinitionId);

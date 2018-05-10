@@ -30,7 +30,8 @@ public class ShiroUtils {
         getSubjct().logout();
     }
 
-    public static List<Principal> getPrinciples() {
+    @SuppressWarnings("unused")
+	public static List<Principal> getPrinciples() {
         List<Principal> principals = null;
         Collection<Session> sessions = sessionDAO.getActiveSessions();
         return principals;

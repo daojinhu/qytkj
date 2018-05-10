@@ -37,7 +37,8 @@ public class ProcessController extends BaseController {
     @Autowired
     private ProcessService processService;
 
-    @Autowired
+    @SuppressWarnings("unused")
+	@Autowired
     private RuntimeService runtimeService;
 
     @GetMapping

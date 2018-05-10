@@ -6,7 +6,6 @@ import com.qytkj.BluetoothWaterControl.common.service.FileService;
 import com.qytkj.BluetoothWaterControl.common.utils.*;
 import javax.servlet.http.HttpServletRequest;
 
-import com.qytkj.BluetoothWaterControl.common.utils.*;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -36,6 +35,7 @@ public class FileController extends BaseController {
 	@Autowired
 	private BootdoConfig bootdoConfig;
 
+	@SuppressWarnings("unused")
 	@GetMapping()
 	@RequiresPermissions("common:sysFile:sysFile")
 	String sysFile(Model model) {

@@ -8,7 +8,6 @@ import com.qytkj.BluetoothWaterControl.common.config.BootdoConfig;
 import com.qytkj.BluetoothWaterControl.common.domain.FileDO;
 import com.qytkj.BluetoothWaterControl.common.service.FileService;
 import com.qytkj.BluetoothWaterControl.common.utils.*;
-import com.qytkj.BluetoothWaterControl.common.utils.*;
 import com.qytkj.BluetoothWaterControl.backgroundManagement.vo.UserVO;
 import com.qytkj.BluetoothWaterControl.common.domain.Tree;
 import com.qytkj.BluetoothWaterControl.backgroundManagement.dao.DeptDao;
@@ -42,6 +41,7 @@ public class UserServiceImpl implements UserService {
 	private FileService sysFileService;
 	@Autowired
 	private BootdoConfig bootdoConfig;
+	@SuppressWarnings("unused")
 	private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 
 	@Override
@@ -196,7 +196,8 @@ public class UserServiceImpl implements UserService {
 		return userMapper.update(userDO);
 	}
 
-    @Override
+    @SuppressWarnings("unused")
+	@Override
     public Map<String, Object> updatePersonalImg(MultipartFile file, String avatar_data, Long userId) throws Exception {
 		String fileName = file.getOriginalFilename();
 		fileName = FileUtil.renameToUUID(fileName);

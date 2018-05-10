@@ -16,7 +16,8 @@ import javax.servlet.http.HttpServletResponse;
 
 @RestController
 public class MainsiteErrorController implements ErrorController {
-    private Logger logger = LoggerFactory.getLogger(getClass());
+    @SuppressWarnings("unused")
+	private Logger logger = LoggerFactory.getLogger(getClass());
     private static final String ERROR_PATH = "/error";
 
     @Autowired

@@ -26,6 +26,7 @@ import java.util.List;
 
 @Controller
 public class LoginController extends BaseController {
+	@SuppressWarnings("unused")
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@Autowired
