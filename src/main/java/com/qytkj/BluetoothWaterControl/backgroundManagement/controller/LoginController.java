@@ -39,7 +39,7 @@ public class LoginController extends BaseController {
 	}
 
 	@Log("请求访问主页")
-	@GetMapping({ "/index" })
+	@GetMapping({ "/homePage" })
 	String index(Model model) {
 		List<Tree<MenuDO>> menus = menuService.listMenuTree(getUserId());
 		model.addAttribute("menus", menus);
@@ -55,7 +55,7 @@ public class LoginController extends BaseController {
 			model.addAttribute("picUrl","/img/photo_s.jpg");
 		}
 		model.addAttribute("username", getUser().getUsername());
-		return "index_v1";
+		return "homePage";
 	}
 
 	@GetMapping("/login")
