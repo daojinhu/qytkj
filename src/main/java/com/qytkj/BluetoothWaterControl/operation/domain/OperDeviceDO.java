@@ -125,4 +125,5 @@ public class OperDeviceDO implements Serializable {
 	public void setLastEditTime(Date lastEditTime) {
 		this.lastEditTime = lastEditTime;
 	}	
+	
 }

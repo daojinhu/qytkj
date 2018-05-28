@@ -2,18 +2,52 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.qytkj.BluetoothWaterControl.operation.dao.OperRepairDao">
+	
+	<resultMap type="com.qytkj.BluetoothWaterControl.operation.domain.OperRepairDO" id="OperRepairMap">  
+        <id column="id" property="id"/>  
+        <result column="intTaskStatus" property="taskStatus"/>  
+        <result column="dtFinishTime" property="finishTime"/> 
+        <result column="intRepairPhone" property="repairPhone"/>  
+        <result column="vchrMaintainPerson" property="maintainPerson"/>
+        <result column="vchrDeviceName" property="deviceName"/>
+        <result column="intProblemOptions" property="problemOptions"/>  
+        <result column="vchrProblemDescription" property="problemDescription"/>
+        <result column="dtCreateTime" property="createTime"/>  
+        <result column="dtLastEditTime" property="lastEditTime"/> 
+        <collection property="operDevice" ofType="com.qytkj.BluetoothWaterControl.operation.domain.OperDeviceDO">  
+        <!-- <association property="operDevice" javaType="com.qytkj.BluetoothWaterControl.operation.domain.OperDeviceDO"> -->
+            <id column="id" property="id"/>
+            <result column="vchrDeviceName" property="deviceName"/>
+            <result column="intDeviceType" property="deviceType"/>
+            <result column="vchrSchool" property="school"/>
+            <result column="vchrAddress" property="address"/>
+            <result column="vchrBuilding" property="building"/>
+            <result column="vchrFloor" property="floor"/>
+            <result column="vchrDormitory" property="dormitory"/>
+            <result column="vchrSupplier" property="supplier"/>
+            <result column="vchrRate" property="rate"/>
+            <result column="vchrCloseTime" property="closeTime"/>
+            <result column="dtCreateTime" property="createTime"/>
+            <result column="dtLastEditTime" property="lastEditTime"/>
+       <!--  </association> -->
+       </collection>
+	</resultMap>  
+	
 	<!-- 获取设备报修信息 -->
-	<select id="queryOperRepair" resultType="com.qytkj.BluetoothWaterControl.operation.domain.OperRepairDO">
-		select id,
-			intTaskStatus,
-			dtFinishTime,
-			intRepairPhone,
-			vchrMaintainPerson,
-			intProblemOptions,
-			vchrProblemDescription,
-			dtCreateTime,
-			dtLastEditTime
-		from yw_tblRepairInfo order by id desc
+	<select id="queryOperRepair" resultMap="OperRepairMap">
+		select * from yw_tblRepairInfo r,yw_tblDeviceInfo d where r.vchrDeviceName = d.vchrDeviceName order by r.id desc
+	</select>
+	
+	<!-- 获取设备报修完成信息 -->
+	<select id="queryOperRepairFinish" resultMap="OperRepairMap">
+		select * from yw_tblRepairInfo r,yw_tblDeviceInfo d where r.vchrDeviceName = d.vchrDeviceName and r.intTaskStatus=0 order by r.id desc
+	</select>
+	
+	<!-- 根据id，维修人员账号获取设备报修完成信息 -->
+	<select id="queryOperRepairFinById" resultMap="OperRepairMap">
+		select * from yw_tblRepairInfo r,yw_tblDeviceInfo d 
+			where r.vchrDeviceName = d.vchrDeviceName 
+			and r.intTaskStatus=0 and r.id=#{rid} and r.vchrMaintainPerson=#{maintainPerson} order by r.id desc
 	</select>
 
 	<!-- 获取订单详情 -->
@@ -27,4 +61,5 @@
 			decConsumption
 		from yw_tblOrderInfo where intDeviceId = #{deviceId}
 	</select>
+	
 </mapper>

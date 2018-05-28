@@ -76,5 +76,6 @@ public class OperOrderDO implements Serializable {
 	}
 	public void setConsumption(BigDecimal consumption) {
 		this.consumption = consumption;
-	}	
+	}
+	
 }

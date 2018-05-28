@@ -11,6 +11,7 @@ import java.util.List;
 import com.qytkj.BluetoothWaterControl.operation.domain.OperOrderDO;
 import com.qytkj.BluetoothWaterControl.operation.domain.OperRepairDO;
 
+
 /** 
 * @Description: 该类的功能描述
 *
@@ -22,6 +23,11 @@ public interface OperRepairService {
 
 	//获取设备报修信息
 	List<OperRepairDO> queryOperRepair();
+	//获取设备报修信息（已报修）
+	List<OperRepairDO> queryOperRepairFinish();
+	//根据id，维修账号获取设备报修信息（已报修）
+	List<OperRepairDO> queryOperRepairFinById(int rid, String maintainPerson);
 	//获取订单详情
 	OperOrderDO queryOperOrderById(Integer deviceId);
+	
 }

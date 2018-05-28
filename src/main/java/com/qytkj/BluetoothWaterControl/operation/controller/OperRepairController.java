@@ -13,6 +13,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.qytkj.BluetoothWaterControl.operation.domain.OperOrderDO;
@@ -35,7 +36,7 @@ public class OperRepairController {
 	
 	/**
 	 * 
-	* @Description: 获取设备报修信息
+	* @Description: 获取设备报修信息(待办任务)
 	* @return：map
 	* @throws：异常描述
 	 */
@@ -44,6 +45,35 @@ public class OperRepairController {
 		Map<String, Object> modelMap = new HashMap<String, Object>();
 		List<OperRepairDO> list = operRepairService.queryOperRepair();
 		modelMap.put("operRepairList", list);
+		return modelMap;
+	}
+	
+	/**
+	* @Description: 获取设备报修信息(已完成任务)
+	*
+	* @return：map:finishOperRepairList
+	* @throws：异常描述
+	 */
+	@RequestMapping(value="/queryOperRepairFinish", method=RequestMethod.GET)
+	public Map<String, Object> queryOperRepairFinish(){
+		Map<String, Object> modelMap = new HashMap<String, Object>();
+		List<OperRepairDO> list = operRepairService.queryOperRepairFinish();
+		modelMap.put("finishOperRepairList", list);
+		return modelMap;
+	}
+	
+	/**
+	* @Description: 根据id，维修人员账号获取设备报修信息(已完成任务)
+	*
+	* @return：map:finishOperRepairByIdList
+	* @throws：异常描述
+	 */
+	@RequestMapping(value="/queryOperRepairFinById", method=RequestMethod.POST)
+	public Map<String, Object> queryOperRepairFinById(@RequestParam("rid") Integer rid, 
+			@RequestParam("maintainPerson") String maintainPerson){
+		Map<String, Object> modelMap = new HashMap<String, Object>();
+		List<OperRepairDO> list = operRepairService.queryOperRepairFinById(rid, maintainPerson);
+		modelMap.put("finishOperRepairByIdList", list);
 		return modelMap;
 	}
 	
@@ -60,4 +90,5 @@ public class OperRepairController {
 		modelMap.put("operOrder", operOrder);
 		return modelMap;
 	}
+	
 }

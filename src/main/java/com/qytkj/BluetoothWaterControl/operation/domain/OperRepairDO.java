@@ -8,6 +8,7 @@ package com.qytkj.BluetoothWaterControl.operation.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 
 /** 
@@ -23,14 +24,16 @@ public class OperRepairDO implements Serializable {
 
 	//主键ID
 	private Integer id;
-	//任务状态
+	//任务状态:0:已结束，1：未处理
 	private Integer taskStatus;
 	//结束时间
 	private Date finishTime;
 	//报修人电话
-	private Integer repairPhone;
+	private String repairPhone;
 	//维修人员
 	private String maintainPerson;
+	//设备名称
+	private String deviceName;
 	//问题选项
 	private Integer problemOptions;
 	//问题描述
@@ -39,6 +42,8 @@ public class OperRepairDO implements Serializable {
 	private Date createTime;
 	//更新时间
 	private Date lastEditTime;
+	
+	private List<OperDeviceDO> operDevice;
 	
 	public Integer getId() {
 		return id;
@@ -58,10 +63,10 @@ public class OperRepairDO implements Serializable {
 	public void setFinishTime(Date finishTime) {
 		this.finishTime = finishTime;
 	}
-	public Integer getRepairPhone() {
+	public String getRepairPhone() {
 		return repairPhone;
 	}
-	public void setRepairPhone(Integer repairPhone) {
+	public void setRepairPhone(String repairPhone) {
 		this.repairPhone = repairPhone;
 	}
 	public String getMaintainPerson() {
@@ -69,6 +74,12 @@ public class OperRepairDO implements Serializable {
 	}
 	public void setMaintainPerson(String maintainPerson) {
 		this.maintainPerson = maintainPerson;
+	}
+	public String getDeviceName() {
+		return deviceName;
+	}
+	public void setDeviceName(String deviceName) {
+		this.deviceName = deviceName;
 	}
 	public Integer getProblemOptions() {
 		return problemOptions;
@@ -93,5 +104,12 @@ public class OperRepairDO implements Serializable {
 	}
 	public void setLastEditTime(Date lastEditTime) {
 		this.lastEditTime = lastEditTime;
+	}
+	public List<OperDeviceDO> getOperDevice() {
+		return operDevice;
+	}
+	public void setOperDevice(List<OperDeviceDO> operDevice) {
+		this.operDevice = operDevice;
 	}	
+	
 }

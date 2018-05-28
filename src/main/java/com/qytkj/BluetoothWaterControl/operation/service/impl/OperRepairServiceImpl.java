@@ -9,6 +9,7 @@ package com.qytkj.BluetoothWaterControl.operation.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.qytkj.BluetoothWaterControl.operation.dao.OperRepairDao;
 import com.qytkj.BluetoothWaterControl.operation.domain.OperOrderDO;
@@ -22,6 +23,7 @@ import com.qytkj.BluetoothWaterControl.operation.service.OperRepairService;
 * @author: hudaojin
 * @date: 2018年5月14日 上午11:58:02 
 */
+@Service
 public class OperRepairServiceImpl implements OperRepairService {
 
 	@Autowired
@@ -37,6 +39,19 @@ public class OperRepairServiceImpl implements OperRepairService {
 		
 		return operRepairDao.queryOperRepair();
 	}
+	
+	/** 
+	* @Description: 该函数的功能描述
+	*
+	* @param:描述1描述
+	* @return：返回结果描述
+	* @throws：异常描述
+	*/
+	@Override
+	public List<OperRepairDO> queryOperRepairFinish() {
+		
+		return operRepairDao.queryOperRepairFinish();
+	}	
 
 	/** 
 	* @Description: 该函数的功能描述
@@ -51,6 +66,17 @@ public class OperRepairServiceImpl implements OperRepairService {
 		return operRepairDao.queryOperOrderById(deviceId);
 	}
 
-	
+	/** 
+	* @Description: 该函数的功能描述
+	*
+	* @param:描述1描述
+	* @return：返回结果描述
+	* @throws：异常描述
+	*/
+	@Override
+	public List<OperRepairDO> queryOperRepairFinById(int rid, String maintainPerson) {
+		
+		return operRepairDao.queryOperRepairFinById(rid, maintainPerson);
+	}	
 
 }
