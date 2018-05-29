@@ -25,26 +25,26 @@ import org.jdom.input.SAXBuilder;
 */
 public class XMLUtil {
 
-	public static Map doXMLParse(String strxml) throws Exception {    
+	public static Map<String, String> doXMLParse(String strxml) throws Exception {    
         strxml = strxml.replaceFirst("encoding=\".*\"", "encoding=\"UTF-8\"");    
 
         if(null == strxml || "".equals(strxml)) {    
             return null;    
         }    
 
-        Map m = new HashMap();    
+        Map<String, String> m = new HashMap<String, String>();    
 
         InputStream in = new ByteArrayInputStream(strxml.getBytes("UTF-8"));    
         SAXBuilder builder = new SAXBuilder();    
         Document doc = builder.build(in);    
         Element root = doc.getRootElement();    
-        List list = root.getChildren();    
-        Iterator it = list.iterator();    
+        List<?> list = root.getChildren();    
+        Iterator<?> it = list.iterator();    
         while(it.hasNext()) {    
             Element e = (Element) it.next();    
             String k = e.getName();    
             String v = "";    
-            List children = e.getChildren();    
+            List<?> children = e.getChildren();    
             if(children.isEmpty()) {    
                 v = e.getTextNormalize();    
             } else {    
@@ -65,15 +65,15 @@ public class XMLUtil {
      * @param children  
      * @return String  
      */    
-    public static String getChildrenText(List children) {    
+    public static String getChildrenText(List<?> children) {    
         StringBuffer sb = new StringBuffer();    
         if(!children.isEmpty()) {    
-            Iterator it = children.iterator();    
+            Iterator<?> it = children.iterator();    
             while(it.hasNext()) {    
                 Element e = (Element) it.next();    
                 String name = e.getName();    
                 String value = e.getTextNormalize();    
-                List list = e.getChildren();    
+                List<?> list = e.getChildren();    
                 sb.append("<" + name + ">");    
                 if(!list.isEmpty()) {    
                     sb.append(XMLUtil.getChildrenText(list));    

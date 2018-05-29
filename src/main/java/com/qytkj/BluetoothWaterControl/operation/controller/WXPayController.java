@@ -123,7 +123,7 @@ public class WXPayController {
 	        String resXml = HttpUtil.postData("https://api.mch.weixin.qq.com/pay/unifiedorder", requestXML);
 	        System.out.println(resXml);
 	        //解析XML存入Map  
-	        Map map = XMLUtil.doXMLParse(resXml);
+	        Map<?, ?> map = XMLUtil.doXMLParse(resXml);
 	        System.out.println(map);
 	        // String return_code = (String) map.get("return_code");  
 	        //得到prepay_id  
@@ -161,7 +161,7 @@ public class WXPayController {
 	        //sb为微信返回的xml    
 	        String notityXml = sb.toString();    
 	        String resXml = "";    
-	        Map map = XMLUtil.doXMLParse(notityXml);  
+	        Map<?, ?> map = XMLUtil.doXMLParse(notityXml);  
 	        String returnCode = (String) map.get("return_code");    
 	  
 	        if("SUCCESS".equals(returnCode)){  
@@ -175,7 +175,8 @@ public class WXPayController {
 	            //用户唯一标识
 	        	wXPayDO.setOpenId((String) map.get("openid"));
 	        	//金额
-	        	BigDecimal totalFee = (BigDecimal)map.get("total_fee");
+	        	@SuppressWarnings("unused")
+				BigDecimal totalFee = (BigDecimal)map.get("total_fee");
 	        	//创建时间
 	        	wXPayDO.setCreateTime(new Date());
 	        	
