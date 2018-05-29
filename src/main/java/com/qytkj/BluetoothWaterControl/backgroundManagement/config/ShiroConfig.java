@@ -25,7 +25,7 @@ import java.util.Collection;
 import java.util.LinkedHashMap;
 
 /**
- * @author bootdo 1992lcg@163.com
+ * @author sj
  */
 @Configuration
 public class ShiroConfig {
@@ -180,6 +180,8 @@ public class ShiroConfig {
         sessionManager.setSessionListeners(listeners);
         return sessionManager;
     }
+    
+    
     @Bean
     public EhCacheManager ehCacheManager() {
         EhCacheManager em = new EhCacheManager();

@@ -59,7 +59,7 @@
 							<div class="col-sm-8">
 								<label th:each="role:${roles}" class="checkbox-inline">
 									<input name="role" type="checkbox" th:value="${role.roleId}"
-									th:text="${role.roleName}" th:checked="${role.roleSign}">
+									th:text="${role.roleName}"  th:disabled = "${role.roleId} == '3'? 'true':'false' ">
 								</label>
 							</div>
 						</div>

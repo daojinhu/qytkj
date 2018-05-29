@@ -6,13 +6,13 @@
 	<select id="get" resultType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleDO">
 		select
 		`role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified`
-		from sys_role where role_id = #{value}
+		from ht_role where role_id = #{value}
 	</select>
 
 	<select id="list" resultType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleDO">
 		select
 		`role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified`
-		from sys_role
+		from ht_role
 		<where>
 			<if test="roleId != null and roleId != ''"> and role_id = #{roleId} </if>
 			<if test="roleName != null and roleName != ''"> and role_name = #{roleName} </if>
@@ -36,7 +36,7 @@
 	</select>
 
 	<select id="count" resultType="int">
-		select count(*) from sys_role
+		select count(*) from ht_role
 		<where>
 			<if test="roleId != null and roleId != ''"> and role_id = #{roleId} </if>
 			<if test="roleName != null and roleName != ''"> and role_name = #{roleName} </if>
@@ -50,7 +50,7 @@
 
 	<insert id="save" parameterType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleDO"
 		useGeneratedKeys="true" keyProperty="roleId">
-		insert into sys_role
+		insert into ht_role
 		(
 		`role_name`,
 		`role_sign`,
@@ -71,7 +71,7 @@
 	</insert>
 
 	<update id="update" parameterType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleDO">
-		update sys_role
+		update ht_role
 		<set>
 			<if test="roleName != null">`role_name` = #{roleName}, </if>
 			<if test="roleSign != null">`role_sign` = #{roleSign}, </if>
@@ -84,11 +84,11 @@
 	</update>
 
 	<delete id="remove">
-		delete from sys_role where role_id = #{value}
+		delete from ht_role where role_id = #{value}
 	</delete>
 
 	<delete id="batchRemove">
-		delete from sys_role where role_id in
+		delete from ht_role where role_id in
 		<foreach item="roleId" collection="array" open="(" separator=","
 			close=")">
 			#{roleId}

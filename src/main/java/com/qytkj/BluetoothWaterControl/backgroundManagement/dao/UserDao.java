@@ -8,10 +8,8 @@ import java.util.Map;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
- * 
- * @author chglee
- * @email 1992lcg@163.com
- * @date 2017-10-03 09:45:11
+ * @author sj
+ * @date 2018年5月23日 
  */
 @Mapper
 public interface UserDao {

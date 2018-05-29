@@ -4,11 +4,11 @@
 <mapper namespace="com.qytkj.BluetoothWaterControl.common.dao.FileDao">
 
 	<select id="get" resultType="com.qytkj.BluetoothWaterControl.common.domain.FileDO">
-		select `id`,`type`,`url`,`create_date` from sys_file where id = #{value}
+		select `id`,`type`,`url`,`create_date` from ht_file where id = #{value}
 	</select>
 
 	<select id="list" resultType="com.qytkj.BluetoothWaterControl.common.domain.FileDO">
-		select `id`,`type`,`url`,`create_date` from sys_file
+		select `id`,`type`,`url`,`create_date` from ht_file
         <where>  
 		  		  <if test="id != null and id != ''"> and id = #{id} </if>
 		  		  <if test="type != null and type != ''"> and type = #{type} </if>
@@ -29,7 +29,7 @@
 	</select>
 	
  	<select id="count" resultType="int">
-		select count(*) from sys_file
+		select count(*) from ht_file
 		 <where>  
 		  		  <if test="id != null and id != ''"> and id = #{id} </if>
 		  		  <if test="type != null and type != ''"> and type = #{type} </if>
@@ -39,7 +39,7 @@
 	</select>
 	 
 	<insert id="save" parameterType="com.qytkj.BluetoothWaterControl.common.domain.FileDO" useGeneratedKeys="true" keyProperty="id">
-		insert into sys_file
+		insert into ht_file
 		(
 			`type`, 
 			`url`, 
@@ -54,7 +54,7 @@
 	</insert>
 	 
 	<update id="update" parameterType="com.qytkj.BluetoothWaterControl.common.domain.FileDO">
-		update sys_file 
+		update ht_file 
 		<set>
 			<if test="type != null">`type` = #{type}, </if>
 			<if test="url != null">`url` = #{url}, </if>
@@ -64,11 +64,11 @@
 	</update>
 	
 	<delete id="remove">
-		delete from sys_file where id = #{value}
+		delete from ht_file where id = #{value}
 	</delete>
 	
 	<delete id="batchRemove">
-		delete from sys_file where id in 
+		delete from ht_file where id in 
 		<foreach item="id" collection="array" open="(" separator="," close=")">
 			#{id}
 		</foreach>

@@ -14,6 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public interface UserService {
+	
 	UserDO get(Long id);
 
 	List<UserDO> list(Map<String, Object> map);
@@ -34,6 +35,7 @@ public interface UserService {
 
 	int resetPwd(UserVO userVO,UserDO userDO) throws Exception;
 	int adminResetPwd(UserVO userVO) throws Exception;
+	
 	Tree<DeptDO> getTree();
 
 	/**
@@ -51,4 +53,11 @@ public interface UserService {
 	 * @throws Exception
 	 */
     Map<String, Object> updatePersonalImg(MultipartFile file, String avatar_data, Long userId) throws Exception;
+
+    /**
+	 * 查找人员角色信息
+	 * @param username
+	 * @return UserRole
+	 */
+	String findUserRoleNameByUserId(String username);
 }

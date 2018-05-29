@@ -9,6 +9,8 @@ import com.qytkj.BluetoothWaterControl.common.utils.R;
 import com.qytkj.BluetoothWaterControl.common.utils.ShiroUtils;
 import com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO;
 import com.qytkj.BluetoothWaterControl.backgroundManagement.service.MenuService;
+import com.qytkj.BluetoothWaterControl.backgroundManagement.service.UserService;
+
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;
@@ -22,7 +24,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class LoginController extends BaseController {
@@ -33,7 +39,9 @@ public class LoginController extends BaseController {
 	MenuService menuService;
 	@Autowired
 	FileService fileService;
-
+	@Autowired
+	UserService userService;
+	
 	@GetMapping({ "/", "" })
 	String welcome(Model model) {
 		return "redirect:/login";
@@ -68,12 +76,19 @@ public class LoginController extends BaseController {
 	@PostMapping("/login")
 	@ResponseBody
 	R ajaxLogin(@RequestParam("username")String username,
-				@RequestParam("password")String password) {
+						   @RequestParam("password")String password,
+						   HttpSession httpSession) {
 
 		UsernamePasswordToken token = new UsernamePasswordToken(username, password);
 		Subject subject = SecurityUtils.getSubject();
 		try {
 			subject.login(token);
+			Map<String, String> userMessage = new HashMap<>();
+			userMessage.put("userName", username);
+			String userRole = userService.findUserRoleNameByUserId(username);
+			userMessage.put("userRole", userRole);
+			
+			httpSession.setAttribute("userMessage", userMessage);
 			return R.ok();
 		} catch (UnknownAccountException e) {
 			return R.error("该用户不存在！");

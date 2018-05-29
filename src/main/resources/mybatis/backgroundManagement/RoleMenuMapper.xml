@@ -5,11 +5,11 @@
 
 	<select id="get" resultType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleMenuDO">
 		select `id`,`role_id`,`menu_id` from
-		sys_role_menu where id = #{value}
+		ht_role_menu where id = #{value}
 	</select>
 
 	<select id="list" resultType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleMenuDO">
-		select `id`,`role_id`,`menu_id` from sys_role_menu
+		select `id`,`role_id`,`menu_id` from ht_role_menu
 		<where>
 			<if test="id != null and id != ''"> and id = #{id} </if>
 			<if test="roleId != null and roleId != ''"> and role_id = #{roleId} </if>
@@ -29,7 +29,7 @@
 	</select>
 
 	<select id="count" resultType="int">
-		select count(*) from sys_role_menu
+		select count(*) from ht_role_menu
 		<where>
 			<if test="id != null and id != ''"> and id = #{id} </if>
 			<if test="roleId != null and roleId != ''"> and role_id = #{roleId} </if>
@@ -39,7 +39,7 @@
 
 	<insert id="save" parameterType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleMenuDO"
 		useGeneratedKeys="true" keyProperty="id">
-		insert into sys_role_menu
+		insert into ht_role_menu
 		(
 		`role_id`,
 		`menu_id`
@@ -52,7 +52,7 @@
 	</insert>
 
 	<update id="update" parameterType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleMenuDO">
-		update sys_role_menu
+		update ht_role_menu
 		<set>
 			<if test="roleId != null">`role_id` = #{roleId}, </if>
 			<if test="menuId != null">`menu_id` = #{menuId}</if>
@@ -61,11 +61,11 @@
 	</update>
 
 	<delete id="remove">
-		delete from sys_role_menu where id = #{value}
+		delete from ht_role_menu where id = #{value}
 	</delete>
 
 	<delete id="batchRemove">
-		delete from sys_role_menu where id in
+		delete from ht_role_menu where id in
 		<foreach item="id" collection="array" open="(" separator=","
 			close=")">
 			#{id}
@@ -73,20 +73,20 @@
 	</delete>
 
 	<select id="listMenuIdByRoleId" resultType="long">
-		select menu_id from sys_role_menu
+		select menu_id from ht_role_menu
 		<where>role_id = #{roleId}</where>
 	</select>
 
 	<delete id="removeByRoleId">
-		DELETE FROM sys_role_menu WHERE role_id=#{roleId}
+		DELETE FROM ht_role_menu WHERE role_id=#{roleId}
 	</delete>
 
 	<delete id="removeByMenuId">
-		DELETE FROM sys_role_menu WHERE menu_id=#{menuId}
+		DELETE FROM ht_role_menu WHERE menu_id=#{menuId}
 	</delete>
 
 	<insert id="batchSave">
-		INSERT INTO sys_role_menu(role_id, menu_id) values
+		INSERT INTO ht_role_menu(role_id, menu_id) values
 		<foreach item="item" index="index" collection="list"
 			separator=",">
 			(#{item.roleId},#{item.menuId})

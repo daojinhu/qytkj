@@ -14,7 +14,7 @@ function update() {
 	$.ajax({
 		cache : true,
 		type : "POST",
-		url : "/sys/user/update",
+		url : "/backStage/user/update",
 		data : $('#signupForm').serialize(),// 你的formid
 		async : false,
 		error : function(request) {
@@ -79,6 +79,9 @@ function validateRule() {
 				minlength : 6,
 				equalTo : "#password"
 			},
+			deptName : {
+				required : true
+			},
 			email : {
 				required : true,
 				email : true
@@ -107,6 +110,9 @@ function validateRule() {
 				minlength : icon + "密码必须6个字符以上",
 				equalTo : icon + "两次输入的密码不一致"
 			},
+			deptName : {
+				required : icon + "请选择部门"
+			},
 			email : icon + "请输入您的E-mail",
 		}
 	})
@@ -116,7 +122,7 @@ var openDept = function(){
 		type:2,
 		title:"选择部门",
 		area : [ '300px', '450px' ],
-		content:"/backgroundManagement/sysDept/treeView"
+		content:"/system/sysDept/treeView"
 	})
 }
 function loadDept( deptId,deptName){

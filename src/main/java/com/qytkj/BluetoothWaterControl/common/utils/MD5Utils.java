@@ -1,28 +1,37 @@
 package com.qytkj.BluetoothWaterControl.common.utils;
 
-import org.apache.shiro.crypto.hash.SimpleHash;
-import org.apache.shiro.util.ByteSource;
+import java.security.MessageDigest;
 
+/** 
+ * 采用MD5加密
+ * @author sj
+ * @datetime 2018-5-28 
+ */
 public class MD5Utils {
-	private static final String SALT = "1qazxsw2";
+    /*** 
+     * MD5加密 生成32位md5码
+     * @param 待加密字符串
+     * @return 返回32位md5码
+     */
+    public static String MD5Encode(String inStr) throws Exception {
+        MessageDigest md5 = null;
+        try {
+            md5 = MessageDigest.getInstance("MD5");
+        } catch (Exception e) {
+            System.out.println(e.toString());
+        }
 
-	private static final String ALGORITH_NAME = "md5";
-
-	private static final int HASH_ITERATIONS = 2;
-
-	public static String encrypt(String pswd) {
-		String newPassword = new SimpleHash(ALGORITH_NAME, pswd, ByteSource.Util.bytes(SALT), HASH_ITERATIONS).toHex();
-		return newPassword;
-	}
-
-	public static String encrypt(String username, String pswd) {
-		String newPassword = new SimpleHash(ALGORITH_NAME, pswd, ByteSource.Util.bytes(username + SALT),
-				HASH_ITERATIONS).toHex();
-		return newPassword;
-	}
-	public static void main(String[] args) {
-		
-		//System.out.println(MD5Utils.encrypt("admin", "1"));
-	}
-
+        byte[] byteArray = inStr.getBytes("UTF-8");
+        byte[] md5Bytes = md5.digest(byteArray);
+        StringBuffer hexValue = new StringBuffer();
+        for (int i = 0; i < md5Bytes.length; i++) {
+            int val = ((int) md5Bytes[i]) & 0xff;
+            if (val < 16) {
+                hexValue.append("0");
+            }
+            hexValue.append(Integer.toHexString(val));
+        }
+        return hexValue.toString();
+    }
+    
 }

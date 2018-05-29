@@ -6,13 +6,13 @@
 	<select id="get" resultType="com.qytkj.BluetoothWaterControl.common.domain.DictDO">
 		select
 		`id`,`name`,`value`,`type`,`description`,`sort`,`parent_id`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag`
-		from sys_dict where id = #{value}
+		from ht_dict where id = #{value}
 	</select>
 
 	<select id="list" resultType="com.qytkj.BluetoothWaterControl.common.domain.DictDO">
 		select
 		`id`,`name`,`value`,`type`,`description`,`sort`,`parent_id`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag`
-		from sys_dict
+		from ht_dict
 		<where>
 			<if test="id != null and id != ''"> and id = #{id} </if>
 			<if test="name != null and name != ''"> and name = #{name} </if>
@@ -42,7 +42,7 @@
 	</select>
 
 	<select id="count" resultType="int">
-		select count(*) from sys_dict
+		select count(*) from ht_dict
 		<where>
 			<if test="id != null and id != ''"> and id = #{id} </if>
 			<if test="name != null and name != ''"> and name = #{name} </if>
@@ -62,7 +62,7 @@
 
 	<insert id="save" parameterType="com.qytkj.BluetoothWaterControl.common.domain.DictDO"
 		useGeneratedKeys="true" keyProperty="id">
-		insert into sys_dict
+		insert into ht_dict
 		(
 		`name`,
 		`value`,
@@ -95,7 +95,7 @@
 	</insert>
 
 	<update id="update" parameterType="com.qytkj.BluetoothWaterControl.common.domain.DictDO">
-		update sys_dict
+		update ht_dict
 		<set>
 			<if test="name != null">`name` = #{name}, </if>
 			<if test="value != null">`value` = #{value}, </if>
@@ -114,11 +114,11 @@
 	</update>
 
 	<delete id="remove">
-		delete from sys_dict where id = #{value}
+		delete from ht_dict where id = #{value}
 	</delete>
 
 	<delete id="batchRemove">
-		delete from sys_dict where id in
+		delete from ht_dict where id in
 		<foreach item="id" collection="array" open="(" separator=","
 			close=")">
 			#{id}
@@ -126,7 +126,7 @@
 	</delete>
 
 	<select id="listType" resultType="com.qytkj.BluetoothWaterControl.common.domain.DictDO">
-		select distinct `type` , description from sys_dict
+		select distinct `type` , description from ht_dict
 	</select>
 
 </mapper>

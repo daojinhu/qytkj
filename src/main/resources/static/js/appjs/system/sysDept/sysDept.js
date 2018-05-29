@@ -1,5 +1,4 @@
-
-var prefix = "/backgroundManagement/sysDept"
+var prefix = "/system/sysDept"
 $(function() {
 	load();
 });

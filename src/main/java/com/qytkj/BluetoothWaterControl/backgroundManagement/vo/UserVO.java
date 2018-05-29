@@ -3,8 +3,8 @@ package com.qytkj.BluetoothWaterControl.backgroundManagement.vo;
 import com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO;
 
 /**
- * @author gaoyuzhe
- * @date 2017/12/15.
+ * @author sj
+ * @date 2018/04/28.
  */
 public class UserVO {
     /**

@@ -1,8 +1,5 @@
 package com.qytkj.BluetoothWaterControl.common.utils.xss;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.safety.Whitelist;
@@ -31,14 +28,7 @@ public class JsoupUtil {
 		// 所以需要给所有标签添加style属性
 		whitelist.addAttributes(":all", "style");
 	}
-
 	public static String clean(String content) {
 		return Jsoup.clean(content, "", whitelist, outputSettings);
 	}
-	
-	public static void main(String[] args) throws FileNotFoundException, IOException {
-		String text = "<a href=\"http://www.baidu.com/a\" onclick=\"alert(1);\">sss</a><script>alert(0);</script>sss";
-		System.out.println(clean(text));
-	}
-
 }

@@ -40,4 +40,6 @@ public interface UserRoleDao {
 	int batchSave(List<UserRoleDO> list);
 
 	int batchRemoveByUserId(Long[] ids);
+	
+	String findUserRoleNameByUserId(String username);
 }

@@ -19,21 +19,20 @@ import java.util.Map;
 
 /**
  * 部门管理
- * 
- * @author chglee
- * @email 1992lcg@163.com
- * @date 2017-09-27 14:40:36
+ * @author sj
+ * @email 
+ * @date 2018-05-08 14:40:36
  */
 
 @Controller
 @RequestMapping("/system/sysDept")
 public class DeptController extends BaseController {
-	private String prefix = "backgroundManagement/dept";
+	private String prefix = "backStage/dept";
 	@Autowired
 	private DeptService sysDeptService;
 
 	@GetMapping()
-	@RequiresPermissions("backgroundManagement:sysDept:sysDept")
+	@RequiresPermissions("system:sysDept:sysDept")
 	String dept() {
 		return prefix + "/dept";
 	}
@@ -41,7 +40,7 @@ public class DeptController extends BaseController {
 	@ApiOperation(value="获取部门列表", notes="")
 	@ResponseBody
 	@GetMapping("/list")
-	@RequiresPermissions("backgroundManagement:sysDept:sysDept")
+	@RequiresPermissions("system:sysDept:sysDept")
 	public List<DeptDO> list() {
 		Map<String, Object> query = new HashMap<>(16);
 		List<DeptDO> sysDeptList = sysDeptService.list(query);
@@ -49,7 +48,7 @@ public class DeptController extends BaseController {
 	}
 
 	@GetMapping("/add/{pId}")
-	@RequiresPermissions("backgroundManagement:sysDept:add")
+	@RequiresPermissions("system:sysDept:add")
 	String add(@PathVariable("pId") Long pId, Model model) {
 		model.addAttribute("pId", pId);
 		if (pId == 0) {
@@ -61,7 +60,7 @@ public class DeptController extends BaseController {
 	}
 
 	@GetMapping("/edit/{deptId}")
-	@RequiresPermissions("backgroundManagement:sysDept:edit")
+	@RequiresPermissions("system:sysDept:edit")
 	String edit(@PathVariable("deptId") Long deptId, Model model) {
 		DeptDO sysDept = sysDeptService.get(deptId);
 		model.addAttribute("sysDept", sysDept);
@@ -79,7 +78,7 @@ public class DeptController extends BaseController {
 	 */
 	@ResponseBody
 	@PostMapping("/save")
-	@RequiresPermissions("backgroundManagement:sysDept:add")
+	@RequiresPermissions("system:sysDept:add")
 	public R save(DeptDO sysDept) {
 		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
 			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
@@ -95,7 +94,7 @@ public class DeptController extends BaseController {
 	 */
 	@ResponseBody
 	@RequestMapping("/update")
-	@RequiresPermissions("backgroundManagement:sysDept:edit")
+	@RequiresPermissions("system:sysDept:edit")
 	public R update(DeptDO sysDept) {
 		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
 			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
@@ -111,7 +110,7 @@ public class DeptController extends BaseController {
 	 */
 	@PostMapping("/remove")
 	@ResponseBody
-	@RequiresPermissions("backgroundManagement:sysDept:remove")
+	@RequiresPermissions("system:sysDept:remove")
 	public R remove(Long deptId) {
 		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
 			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
@@ -136,7 +135,7 @@ public class DeptController extends BaseController {
 	 */
 	@PostMapping("/batchRemove")
 	@ResponseBody
-	@RequiresPermissions("backgroundManagement:sysDept:batchRemove")
+	@RequiresPermissions("system:sysDept:batchRemove")
 	public R remove(@RequestParam("ids[]") Long[] deptIds) {
 		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
 			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
@@ -156,6 +155,11 @@ public class DeptController extends BaseController {
 	@GetMapping("/treeView")
 	String treeView() {
 		return  prefix + "/deptTree";
+	}
+	
+	@GetMapping("/choseDept")
+	String choseDept() {
+		return  prefix + "/choseDept";
 	}
 
 }

@@ -5,13 +5,13 @@
 
 	<select id="get" resultType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO">
 		select
-		`dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept
+		`dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from ht_dept
 		where dept_id = #{value}
 	</select>
 
 	<select id="list" resultType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO">
 		select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from
-		sys_dept
+		ht_dept
 		<where>
 			<if test="deptId != null and deptId != ''"> and dept_id = #{deptId} </if>
 			<if test="parentId != null and parentId != ''"> and parent_id = #{parentId} </if>
@@ -33,7 +33,7 @@
 	</select>
 
 	<select id="count" resultType="int">
-		select count(*) from sys_dept
+		select count(*) from ht_dept
 		<where>
 			<if test="deptId != null and deptId != ''"> and dept_id = #{deptId} </if>
 			<if test="parentId != null and parentId != ''"> and parent_id = #{parentId} </if>
@@ -45,7 +45,7 @@
 
 	<insert id="save" parameterType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO"
 		useGeneratedKeys="true" keyProperty="deptId">
-		insert into sys_dept
+		insert into ht_dept
 		(
 		`parent_id`,
 		`name`,
@@ -62,7 +62,7 @@
 	</insert>
 
 	<update id="update" parameterType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO">
-		update sys_dept
+		update ht_dept
 		<set>
 			<if test="parentId != null">`parent_id` = #{parentId}, </if>
 			<if test="name != null">`name` = #{name}, </if>
@@ -73,11 +73,11 @@
 	</update>
 
 	<delete id="remove">
-		delete from sys_dept where dept_id = #{value}
+		delete from ht_dept where dept_id = #{value}
 	</delete>
 
 	<delete id="batchRemove">
-		delete from sys_dept where dept_id in
+		delete from ht_dept where dept_id in
 		<foreach item="deptId" collection="array" open="(" separator=","
 			close=")">
 			#{deptId}
@@ -85,10 +85,10 @@
 	</delete>
 	
 	<select id="listParentDept" resultType="long">
-		select DISTINCT parent_id from sys_dept
+		select DISTINCT parent_id from ht_dept
 	</select>
 
     <select id="getDeptUserNumber" resultType="int">
-		select count(*) from sys_user where dept_id = #{value}
+		select count(*) from ht_user where dept_id = #{value}
 	</select>
 </mapper>

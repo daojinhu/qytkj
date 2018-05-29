@@ -27,16 +27,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@RequestMapping("/sys/user")
+@RequestMapping("/backStage/user")
 @Controller
 public class UserController extends BaseController {
-	private String prefix="backgroundManagement/user"  ;
+	private String prefix="backStage/user"  ;
 	@Autowired
     UserService userService;
 	@Autowired
     RoleService roleService;
 	@Autowired
     DictService dictService;
+	
 	@RequiresPermissions("sys:user:user")
 	@GetMapping("")
 	String user(Model model) {
@@ -80,9 +81,9 @@ public class UserController extends BaseController {
 	@ResponseBody
     R save(UserDO user) {
 		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
+			return R.error(1, "演示系统不允许修改,完整体验请获取权限");
 		}
-		user.setPassword(MD5Utils.encrypt(user.getUsername(), user.getPassword()));
+		user.setPassword(user.getPassword());
 		if (userService.save(user) > 0) {
 			return R.ok();
 		}
@@ -95,7 +96,7 @@ public class UserController extends BaseController {
 	@ResponseBody
 	R update(UserDO user) {
 		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
+			return R.error(1, "演示系统不允许修改,完整体验请获取权限");
 		}
 		if (userService.update(user) > 0) {
 			return R.ok();
@@ -110,7 +111,7 @@ public class UserController extends BaseController {
 	@ResponseBody
 	R updatePeronal(UserDO user) {
 		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
+			return R.error(1, "演示系统不允许修改,完整体验请获取权限");
 		}
 		if (userService.updatePersonal(user) > 0) {
 			return R.ok();
@@ -125,7 +126,7 @@ public class UserController extends BaseController {
 	@ResponseBody
 	R remove(Long id) {
 		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
+			return R.error(1, "演示系统不允许修改,完整体验请获取权限");
 		}
 		if (userService.remove(id) > 0) {
 			return R.ok();
@@ -139,7 +140,7 @@ public class UserController extends BaseController {
 	@ResponseBody
 	R batchRemove(@RequestParam("ids[]") Long[] userIds) {
 		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
+			return R.error(1, "演示系统不允许修改,完整体验请获取权限");
 		}
 		int r = userService.batchremove(userIds);
 		if (r > 0) {
@@ -159,7 +160,7 @@ public class UserController extends BaseController {
 	@Log("请求更改用户密码")
 	@GetMapping("/resetPwd/{id}")
 	String resetPwd(@PathVariable("id") Long userId, Model model) {
-
+		
 		UserDO userDO = new UserDO();
 		userDO.setUserId(userId);
 		model.addAttribute("user", userDO);
@@ -171,7 +172,7 @@ public class UserController extends BaseController {
 	@ResponseBody
 	R resetPwd(UserVO userVO) {
 		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
+			return R.error(1, "演示系统不允许修改,完整体验请获取权限");
 		}
 		try{
 			userService.resetPwd(userVO,getUser());
@@ -187,7 +188,7 @@ public class UserController extends BaseController {
 	@ResponseBody
 	R adminResetPwd(UserVO userVO) {
 		if (Constant.DEMO_ACCOUNT.equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
+			return R.error(1, "演示系统不允许修改,完整体验请获取权限");
 		}
 		try{
 			userService.adminResetPwd(userVO);
@@ -218,11 +219,12 @@ public class UserController extends BaseController {
 		model.addAttribute("sexList",dictService.getSexList());
 		return prefix + "/personal";
 	}
+	
 	@ResponseBody
 	@PostMapping("/uploadImg")
 	R uploadImg(@RequestParam("avatar_file") MultipartFile file, String avatar_data, HttpServletRequest request) {
 		if ("test".equals(getUsername())) {
-			return R.error(1, "演示系统不允许修改,完整体验请部署程序");
+			return R.error(1, "演示系统不允许修改,完整体验请获取权限");
 		}
 		Map<String, Object> result = new HashMap<>();
 		try {

@@ -6,6 +6,7 @@ import com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO;
 
 @Controller
 public class BaseController {
+	/*后台用户*/
 	public UserDO getUser() {
 		return ShiroUtils.getUser();
 	}
@@ -16,5 +17,5 @@ public class BaseController {
 
 	public String getUsername() {
 		return getUser().getUsername();
-	}
+	}	
 }

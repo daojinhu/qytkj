@@ -50,6 +50,8 @@ public class UserDO implements Serializable {
     private String city;
     //所在地区
     private String district;
+    //角色名
+    private String rolename;
 
     public Long getUserId() {
         return userId;
@@ -219,7 +221,15 @@ public class UserDO implements Serializable {
         this.district = district;
     }
 
-    @Override
+    public String getRolename() {
+		return rolename;
+	}
+
+	public void setRolename(String rolename) {
+		this.rolename = rolename;
+	}
+
+	@Override
     public String toString() {
         return "UserDO{" +
                 "userId=" + userId +
@@ -243,6 +253,7 @@ public class UserDO implements Serializable {
                 ", province='" + province + '\'' +
                 ", city='" + city + '\'' +
                 ", district='" + district + '\'' +
+                ", rolename='" + rolename + '\'' +
                 '}';
     }
 }

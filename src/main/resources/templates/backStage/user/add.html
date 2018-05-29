@@ -58,11 +58,11 @@
 							</div>
 							<input type="hidden" name="roleIds" id="roleIds">
 							<div class="form-group">
-								<label class="col-sm-3 control-label">角色</label>
+								<label class="col-sm-3 control-label">角色:</label>
 								<div class="col-sm-8">
 									<label th:each="role:${roles}" class="checkbox-inline">
 										<input name="role" type="checkbox" th:value="${role.roleId}"
-										th:text="${role.roleName}">
+										th:text="${role.roleName}" th:disabled = "${role.roleId} == '3'? 'true':'false' ">
 									</label>
 								</div>
 							</div>

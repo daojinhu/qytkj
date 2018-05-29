@@ -4,14 +4,35 @@
 <mapper namespace="com.qytkj.BluetoothWaterControl.backgroundManagement.dao.UserDao">
 
 	<select id="get" resultType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO">
-		select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = #{value}
+		select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from ht_user where user_id = #{value}
 	</select>
 
 	<select id="list" resultType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO">
-		select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user
+		select 
+			u.user_id,
+			u.username,
+			u.name,
+			u.password,
+			u.dept_id,
+			u.mobile,
+			u.status,
+			u.user_id_create,
+			u.gmt_create,
+			u.gmt_modified,
+			u.sex,
+			u.pic_id,
+			u.live_address,
+			u.province,
+			u.city,
+			u.district,
+			ur.role_id,
+			r.role_name 
+			from ht_user u
+			LEFT JOIN ht_user_role ur ON u.user_id = ur.user_id
+			LEFT JOIN ht_role r ON ur.role_id = r.role_id
         <where>  
 		  		  <if test="userId != null and userId != ''"> and user_id = #{userId} </if>
-		  		  <if test="username != null and username != ''"> and username = #{username} </if>
+		  		  <if test="username != null and username != ''"> and username = #{username}</if>
 		  		  <if test="name != null and name != ''"> and name = #{name} </if>
 		  		  <if test="password != null and password != ''"> and password = #{password} </if>
 		  		  <if test="deptId != null and deptId != ''"> and dept_id = #{deptId} </if>
@@ -44,10 +65,10 @@
 	</select>
 	
  	<select id="count" resultType="int">
-		select count(*) from sys_user
+		select count(*) from ht_user
 		 <where>  
 		  		  <if test="userId != null and userId != ''"> and user_id = #{userId} </if>
-		  		  <if test="username != null and username != ''"> and username = #{username} </if>
+		  		  <if test="username != null and username != ''"> and username like CONCAT('%',#{username},'%') </if>
 		  		  <if test="name != null and name != ''"> and name = #{name} </if>
 		  		  <if test="password != null and password != ''"> and password = #{password} </if>
 		  		  <if test="deptId != null and deptId != ''"> and dept_id = #{deptId} </if>
@@ -69,7 +90,7 @@
 	</select>
 	 
 	<insert id="save" parameterType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO" useGeneratedKeys="true" keyProperty="userId">
-		insert into sys_user
+		insert into ht_user
 		(
 			`username`, 
 			`name`, 
@@ -114,7 +135,7 @@
 	</insert>
 	 
 	<update id="update" parameterType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO">
-		update sys_user 
+		update ht_user 
 		<set>
 			<if test="username != null">`username` = #{username}, </if>
 			<if test="name != null">`name` = #{name}, </if>
@@ -139,17 +160,17 @@
 	</update>
 	
 	<delete id="remove">
-		delete from sys_user where user_id = #{value}
+		delete from ht_user where user_id = #{value}
 	</delete>
 	
 	<delete id="batchRemove">
-		delete from sys_user where user_id in 
+		delete from ht_user where user_id in 
 		<foreach item="userId" collection="array" open="(" separator="," close=")">
 			#{userId}
 		</foreach>
 	</delete>
 
 	<select id="listAllDept" resultType="long">
-				select DISTINCT dept_id from sys_user
+				select DISTINCT dept_id from ht_user
 	</select>
 </mapper>

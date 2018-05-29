@@ -123,8 +123,8 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public int resetPwd(UserVO userVO,UserDO userDO) throws Exception {
 		if(Objects.equals(userVO.getUserDO().getUserId(),userDO.getUserId())){
-			if(Objects.equals(MD5Utils.encrypt(userDO.getUsername(),userVO.getPwdOld()),userDO.getPassword())){
-				userDO.setPassword(MD5Utils.encrypt(userDO.getUsername(),userVO.getPwdNew()));
+			if(Objects.equals(MD5Utils.MD5Encode(userVO.getPwdOld()),userDO.getPassword())){
+				userDO.setPassword(MD5Utils.MD5Encode(userVO.getPwdNew()));
 				return userMapper.update(userDO);
 			}else{
 				throw new Exception("输入的旧密码有误！");
@@ -139,7 +139,7 @@ public class UserServiceImpl implements UserService {
 		if("admin".equals(userDO.getUsername())){
 			throw new Exception("超级管理员的账号不允许直接重置！");
 		}
-		userDO.setPassword(MD5Utils.encrypt(userDO.getUsername(), userVO.getPwdNew()));
+		userDO.setPassword(MD5Utils.MD5Encode(userVO.getPwdNew()));
 		return userMapper.update(userDO);
 
 
@@ -237,5 +237,10 @@ public class UserServiceImpl implements UserService {
 		}
 		return result;
     }
+    
+    @Override
+    public String findUserRoleNameByUserId(String username) {
+    	return userRoleMapper.findUserRoleNameByUserId(username);
+	}
 
 }
