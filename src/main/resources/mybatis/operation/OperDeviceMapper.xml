@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qytkj.BluetoothWaterControl.operation.dao.OperDeviceDao">
+	
+	<resultMap type="com.qytkj.BluetoothWaterControl.operation.domain.OperDeviceDO" id="OperDeviceMap">  
+	    <id column="id" property="id"/>
+        <result column="vchrDeviceName" property="deviceName"/>
+        <result column="intDeviceType" property="deviceType"/>
+        <result column="vchrSchool" property="school"/>
+        <result column="vchrAddress" property="address"/>
+        <result column="vchrBuilding" property="building"/>
+        <result column="vchrFloor" property="floor"/>
+        <result column="vchrDormitory" property="dormitory"/>
+        <result column="vchrSupplier" property="supplier"/>
+        <result column="vchrRate" property="rate"/>
+        <result column="vchrCloseTime" property="closeTime"/>
+        <result column="dtCreateTime" property="createTime"/>
+        <result column="dtLastEditTime" property="lastEditTime"/>
+	</resultMap> 
+	
+	<!-- 添加设备信息 -->
+	<insert id="addDevice" useGeneratedKeys="true" keyProperty="id" keyColumn="id" parameterType="com.qytkj.BluetoothWaterControl.operation.domain.OperDeviceDO">
+		insert into yw_tblDeviceInfo(vchrDeviceName,
+			 intDeviceType,vchrSchool,vchrAddress,
+			 vchrBuilding, vchrFloor, vchrDormitory, 
+			 vchrSupplier, vchrRate, vchrCloseTime, 
+			 dtCreateTime, dtLastEditTime) values(#{deviceName},
+			 #{deviceType},#{school},#{address},
+			 #{building},#{floor},#{dormitory},#{supplier},
+			 #{rate},#{closeTime},#{createTime},#{lastEditTime})
+	</insert>
+	
+	<!-- 获取设备信息 -->
+	<select id="queryOperDevice" resultMap="OperDeviceMap">
+		select id,
+			vchrDeviceName,
+			intDeviceType,
+			vchrSchool,
+			vchrAddress,
+			vchrBuilding,
+			vchrFloor,
+			vchrDormitory,
+			vchrSupplier,
+			vchrRate,
+			vchrCloseTime,
+			dtCreateTime,
+			dtLastEditTime
+		from yw_tblDeviceInfo
+	</select>
+	
+		<!-- 获取id获取设备信息 -->
+	<select id="queryOperDeviceById" resultMap="OperDeviceMap">
+		select id,
+			vchrDeviceName,
+			intDeviceType,
+			vchrSchool,
+			vchrAddress,
+			vchrBuilding,
+			vchrFloor,
+			vchrDormitory,
+			vchrSupplier,
+			vchrRate,
+			vchrCloseTime,
+			dtCreateTime,
+			dtLastEditTime
+		from yw_tblDeviceInfo where id = #{rid}
+	</select>
+	
+	
+	
+	<!-- 修改设备信息 -->
+	<update id="modifyOperDevice" parameterType="com.qytkj.BluetoothWaterControl.operation.domain.OperDeviceDO">
+		update yw_tblDeviceInfo
+		<set>
+			<if test="deviceName != null and deviceName != ''">vchrDeviceName = #{deviceName},</if>
+			<if test="building != null and building != ''">vchrBuilding = #{building},</if>
+			<if test="floor != null and floor != ''">vchrFloor = #{vchrFloor},</if>
+			<if test="dormitory != null and dormitory != ''">vchrDormitory = #{dormitory},</if>
+			<if test="supplier != null and supplier != ''">vchrSupplier = #{supplier},</if>
+			<if test="rate != null and rate != ''">vchrRate = #{rate},</if>
+			<if test="closeTime != null and closeTime != ''">vchrCloseTime = #{closeTime},</if>
+			<if test="lastEditTime != null and lastEditTime != ''">dtLastEditTime = #{lastEditTime}</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+	<!-- 删除设备信息 -->
+	<delete id="deleteOperDevice">
+		delete from yw_tblDeviceInfo where id = #{id}
+	</delete>
+	
+	
+</mapper>
