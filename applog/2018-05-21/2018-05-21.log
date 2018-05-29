@@ -1,0 +1,1431 @@
+2018-05-21 16:09:24 -Starting BootdoApplication on PC-20170704VKZJ with PID 15704 (E:\QYTLYSK\QYTLYSK_1.0\QYTKJ_LYSK\target\classes started by Administrator in E:\QYTLYSK\QYTLYSK_1.0\QYTKJ_LYSK)
+2018-05-21 16:09:24 -The following profiles are active: dev
+2018-05-21 16:09:25 -HV000001: Hibernate Validator 5.3.6.Final
+2018-05-21 16:09:25 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@726cb032: startup date [Mon May 21 16:09:25 CST 2018]; root of context hierarchy
+2018-05-21 16:09:27 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-21 16:09:27 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f5f977ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:09:27 -Bean 'shiroConfig' of type [com.qytkj.BluetoothWaterControl.backgroundManagement.config.ShiroConfig$$EnhancerBySpringCGLIB$$b447b02b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:09:28 -Bean 'userRealm' of type [com.qytkj.BluetoothWaterControl.backgroundManagement.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:09:28 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:09:28 -Cache with name 'com.qytkj.BluetoothWaterControl.backgroundManagement.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2018-05-21 16:09:28 -Added EhCache named [com.qytkj.BluetoothWaterControl.backgroundManagement.shiro.UserRealm.authorizationCache]
+2018-05-21 16:09:28 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:09:28 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:09:28 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:09:28 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:09:29 -Tomcat initialized with port(s): 8080 (http)
+2018-05-21 16:09:29 -Starting service [Tomcat]
+2018-05-21 16:09:29 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-05-21 16:09:29 -Initializing Spring embedded WebApplicationContext
+2018-05-21 16:09:29 -Root WebApplicationContext: initialization completed in 4188 ms
+2018-05-21 16:09:29 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-21 16:09:29 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-21 16:09:29 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-21 16:09:29 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-21 16:09:29 -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-05-21 16:09:29 -Filter xssFilter was not registered (disabled)
+2018-05-21 16:09:29 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-05-21 16:09:29 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2018-05-21 16:09:29 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-05-21 16:09:29 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-21 16:09:30 -{dataSource-1} inited
+2018-05-21 16:09:32 -ProcessEngine default created
+2018-05-21 16:09:33 -Using default implementation for ThreadExecutor
+2018-05-21 16:09:33 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-05-21 16:09:33 -Quartz Scheduler v.2.2.1 created.
+2018-05-21 16:09:33 -RAMJobStore initialized.
+2018-05-21 16:09:33 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-05-21 16:09:33 -Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2018-05-21 16:09:33 -Quartz scheduler version: 2.2.1
+2018-05-21 16:09:33 -JobFactory set to: com.qytkj.BluetoothWaterControl.common.quartz.factory.JobFactory@10a82ceb
+2018-05-21 16:09:33 -Initializing ExecutorService  'clientInboundChannelExecutor'
+2018-05-21 16:09:33 -Initializing ExecutorService  'clientOutboundChannelExecutor'
+2018-05-21 16:09:34 -Mapped "{[/activiti/model/{id}],methods=[DELETE]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.remove(java.lang.String)
+2018-05-21 16:09:34 -Mapped "{[/activiti/model/list],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.list(int,int)
+2018-05-21 16:09:34 -Mapped "{[/activiti/model/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.batchRemove(java.lang.String[])
+2018-05-21 16:09:34 -Mapped "{[/activiti/model],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.model()
+2018-05-21 16:09:34 -Mapped "{[/activiti/model/add]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.newModel(javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-05-21 16:09:34 -Mapped "{[/activiti/model/{modelId}/save],methods=[PUT]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.saveModel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-21 16:09:34 -Mapped "{[/activiti/model/{modelId}/json],methods=[GET]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.getEditorJson(java.lang.String)
+2018-05-21 16:09:34 -Mapped "{[/activiti/editor/stencilset],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.getStencilset()
+2018-05-21 16:09:34 -Mapped "{[/activiti/model/edit/{id}],methods=[GET]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.edit(javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-05-21 16:09:34 -Mapped "{[/activiti/model/deploy/{id}],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.deploy(java.lang.String) throws java.lang.Exception
+2018-05-21 16:09:34 -Mapped "{[/activiti/model/export/{id}],methods=[GET]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.exportToXml(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-05-21 16:09:34 -Mapped "{[/activiti/process/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.add()
+2018-05-21 16:09:34 -Mapped "{[/activiti/process/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.remove(java.lang.String)
+2018-05-21 16:09:34 -Mapped "{[/activiti/process/list],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.list(int,int)
+2018-05-21 16:09:34 -Mapped "{[/activiti/process/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.batchRemove(java.lang.String[])
+2018-05-21 16:09:34 -Mapped "{[/activiti/process],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.process()
+2018-05-21 16:09:34 -Mapped "{[/activiti/process/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.deploy(java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile)
+2018-05-21 16:09:34 -Mapped "{[/activiti/process/convertToModel/{procDefId}]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.convertToModel(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.io.UnsupportedEncodingException,javax.xml.stream.XMLStreamException
+2018-05-21 16:09:34 -Mapped "{[/activiti/process/resource/read/{xml}/{id}]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.resourceRead(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-05-21 16:09:34 -Mapped "{[/act/salary/form],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.add()
+2018-05-21 16:09:34 -Mapped "{[/act/salary/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.remove(java.lang.String)
+2018-05-21 16:09:34 -Mapped "{[/act/salary/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.remove(java.lang.String[])
+2018-05-21 16:09:34 -Mapped "{[/act/salary/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.update(com.qytkj.BluetoothWaterControl.activiti.domain.SalaryDO)
+2018-05-21 16:09:34 -Mapped "{[/act/salary/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:09:34 -Mapped "{[/act/salary/form/{taskId}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.edit(java.lang.String,org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/act/salary],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.Salary()
+2018-05-21 16:09:34 -Mapped "{[/act/salary/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.saveOrUpdate(com.qytkj.BluetoothWaterControl.activiti.domain.SalaryDO)
+2018-05-21 16:09:34 -Mapped "{[/activiti/task/form/{procDefId}/{taskId}],methods=[GET]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.form(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-05-21 16:09:34 -Mapped "{[/activiti/task/gotoList],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.list(int,int)
+2018-05-21 16:09:34 -Mapped "{[/activiti/task/goto],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.gotoTask()
+2018-05-21 16:09:34 -Mapped "{[/activiti/task/form/{procDefId}],methods=[GET]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.startForm(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-05-21 16:09:34 -Mapped "{[/activiti/task/todo],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.todo()
+2018-05-21 16:09:34 -Mapped "{[/activiti/task/todoList],methods=[GET]}" onto java.util.List<com.qytkj.BluetoothWaterControl.activiti.vo.TaskVO> com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.todoList()
+2018-05-21 16:09:34 -Mapped "{[/activiti/task/trace/photo/{procDefId}/{execId}]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.tracePhoto(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-05-21 16:09:34 -Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.remove(java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.remove(java.lang.Long[])
+2018-05-21 16:09:34 -Mapped "{[/system/sysDept/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.update(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO)
+2018-05-21 16:09:34 -Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.list()
+2018-05-21 16:09:34 -Mapped "{[/system/sysDept/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.save(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO)
+2018-05-21 16:09:34 -Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.domain.Tree<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.tree()
+2018-05-21 16:09:34 -Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.dept()
+2018-05-21 16:09:34 -Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.treeView()
+2018-05-21 16:09:34 -Mapped "{[/homePage],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.index(org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.main()
+2018-05-21 16:09:34 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.logout()
+2018-05-21 16:09:34 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.welcome(org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.login()
+2018-05-21 16:09:34 -Mapped "{[/login],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2018-05-21 16:09:34 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.remove(java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.update(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO)
+2018-05-21 16:09:34 -Mapped "{[/sys/menu/list]}" onto java.util.List<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:09:34 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.save(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO)
+2018-05-21 16:09:34 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.domain.Tree<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.tree(java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.domain.Tree<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.tree()
+2018-05-21 16:09:34 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.menu(org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.add()
+2018-05-21 16:09:34 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.update(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleDO)
+2018-05-21 16:09:34 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.list()
+2018-05-21 16:09:34 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.save(java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.save(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleDO)
+2018-05-21 16:09:34 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.batchRemove(java.lang.Long[])
+2018-05-21 16:09:34 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.role()
+2018-05-21 16:09:34 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserOnline> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.SessionController.list()
+2018-05-21 16:09:34 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.SessionController.online()
+2018-05-21 16:09:34 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-05-21 16:09:34 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.SessionController.sessionList()
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/exit],methods=[POST]}" onto boolean com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.add(org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/remove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.remove(java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/update],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.update(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO)
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/list],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/save],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.save(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO)
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/batchRemove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.batchRemove(java.lang.Long[])
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/tree],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.domain.Tree<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.tree()
+2018-05-21 16:09:34 -Mapped "{[/backStage/user],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.user(org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/treeView],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.treeView()
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/updatePeronal],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.updatePeronal(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO)
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/resetPwd],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.resetPwd(com.qytkj.BluetoothWaterControl.backgroundManagement.vo.UserVO)
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/adminResetPwd],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.adminResetPwd(com.qytkj.BluetoothWaterControl.backgroundManagement.vo.UserVO)
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/personal],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.personal(org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/backStage/user/uploadImg],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-05-21 16:09:34 -Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.DictController.add()
+2018-05-21 16:09:34 -Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.DictController.remove(java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.DictController.remove(java.lang.Long[])
+2018-05-21 16:09:34 -Mapped "{[/common/dict/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.DictController.update(com.qytkj.BluetoothWaterControl.common.domain.DictDO)
+2018-05-21 16:09:34 -Mapped "{[/common/dict/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:09:34 -Mapped "{[/common/dict/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.DictController.save(com.qytkj.BluetoothWaterControl.common.domain.DictDO)
+2018-05-21 16:09:34 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.qytkj.BluetoothWaterControl.common.domain.DictDO> com.qytkj.BluetoothWaterControl.common.controller.DictController.listType()
+2018-05-21 16:09:34 -Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.DictController.dict()
+2018-05-21 16:09:34 -Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-05-21 16:09:34 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.qytkj.BluetoothWaterControl.common.domain.DictDO> com.qytkj.BluetoothWaterControl.common.controller.DictController.listByType(java.lang.String)
+2018-05-21 16:09:34 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.FileController.add()
+2018-05-21 16:09:34 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-05-21 16:09:34 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.remove(java.lang.Long[])
+2018-05-21 16:09:34 -Mapped "{[/common/sysFile/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.update(com.qytkj.BluetoothWaterControl.common.domain.FileDO)
+2018-05-21 16:09:34 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:09:34 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.save(com.qytkj.BluetoothWaterControl.common.domain.FileDO)
+2018-05-21 16:09:34 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.info(java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018-05-21 16:09:34 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:09:34 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.list()
+2018-05-21 16:09:34 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-05-21 16:09:34 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.generator()
+2018-05-21 16:09:34 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/common/generator/batchCode]}" onto public void com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-05-21 16:09:34 -Mapped "{[/common/job/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.JobController.add()
+2018-05-21 16:09:34 -Mapped "{[/common/job/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.remove(java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/common/job/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.remove(java.lang.Long[])
+2018-05-21 16:09:34 -Mapped "{[/common/job/update],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.update(com.qytkj.BluetoothWaterControl.common.domain.TaskDO)
+2018-05-21 16:09:34 -Mapped "{[/common/job/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.common.controller.JobController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:09:34 -Mapped "{[/common/job/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.save(com.qytkj.BluetoothWaterControl.common.domain.TaskDO)
+2018-05-21 16:09:34 -Mapped "{[/common/job/info/{id}]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.info(java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/common/job/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.JobController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/common/job/changeJobStatus],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.changeJobStatus(java.lang.Long,java.lang.String)
+2018-05-21 16:09:34 -Mapped "{[/common/job],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.JobController.taskScheduleJob()
+2018-05-21 16:09:34 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.LogController.remove(java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.LogController.log()
+2018-05-21 16:09:34 -Mapped "{[/common/log/list],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.domain.PageDO<com.qytkj.BluetoothWaterControl.common.domain.LogDO> com.qytkj.BluetoothWaterControl.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:09:34 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.LogController.batchRemove(java.lang.Long[])
+2018-05-21 16:09:34 -Mapped "{[/error]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-21 16:09:34 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-21 16:09:34 -Mapped "{[/oa/notify/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.add()
+2018-05-21 16:09:34 -Mapped "{[/oa/notify/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.remove(java.lang.Long)
+2018-05-21 16:09:34 -Mapped "{[/oa/notify/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.remove(java.lang.Long[])
+2018-05-21 16:09:34 -Mapped "{[/oa/notify/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.update(com.qytkj.BluetoothWaterControl.oa.domain.NotifyDO)
+2018-05-21 16:09:34 -Mapped "{[/oa/notify/read/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.read(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/oa/notify/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:09:34 -Mapped "{[/oa/notify/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.save(com.qytkj.BluetoothWaterControl.oa.domain.NotifyDO)
+2018-05-21 16:09:34 -Mapped "{[/oa/notify/message],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.message()
+2018-05-21 16:09:34 -Mapped "{[/oa/notify/selfList],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.selfList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:09:34 -Mapped "{[/oa/notify/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:09:34 -Mapped "{[/oa/notify],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.oaNotify()
+2018-05-21 16:09:34 -Mapped "{[/oa/notify/selfNotify],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.selefNotify()
+2018-05-21 16:09:34 -Mapped "{[/operUser/getAddress],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.qytkj.BluetoothWaterControl.operation.controller.OperUserController.getAddress()
+2018-05-21 16:09:34 -Mapped "{[/operUser/getUser],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.qytkj.BluetoothWaterControl.operation.controller.OperUserController.getUser()
+2018-05-21 16:09:34 -Mapped "{[/operUser/login],methods=[GET]}" onto public java.lang.String com.qytkj.BluetoothWaterControl.operation.controller.OperUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2018-05-21 16:09:34 -Mapped "{[/operUser/updatePassword],methods=[POST]}" onto public java.lang.Integer com.qytkj.BluetoothWaterControl.operation.controller.OperUserController.updatePassword(java.lang.String,java.lang.String)
+2018-05-21 16:09:34 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-05-21 16:09:34 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-21 16:09:34 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-21 16:09:34 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-21 16:09:34 -Initializing ExecutorService  'messageBrokerTaskScheduler'
+2018-05-21 16:09:34 -Mapped URL path [/endpointChat/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2018-05-21 16:09:34 -Initializing ExecutorService  'brokerChannelExecutor'
+2018-05-21 16:09:35 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@726cb032: startup date [Mon May 21 16:09:25 CST 2018]; root of context hierarchy
+2018-05-21 16:09:35 -Mapped URL path [/files/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-21 16:09:35 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-21 16:09:35 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-21 16:09:35 -Detected @ExceptionHandler methods in BDExceptionHandler
+2018-05-21 16:09:35 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-21 16:09:36 -
+
+Using default security password: ce40b445-1af5-46ee-aeeb-e8839439f82a
+
+2018-05-21 16:09:36 -Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2018-05-21 16:09:37 -Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@7b39054, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bb78968, org.springframework.security.web.context.SecurityContextPersistenceFilter@614bd8ff, org.springframework.security.web.header.HeaderWriterFilter@494f810a, org.springframework.security.web.csrf.CsrfFilter@79ff6d2a, org.springframework.security.web.authentication.logout.LogoutFilter@59bf1347, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15785906, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29e91943, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ab39c72, org.springframework.security.web.session.SessionManagementFilter@33116b61, org.springframework.security.web.access.ExceptionTranslationFilter@38d6fbeb]
+2018-05-21 16:09:37 -LiveReload server is running on port 35729
+2018-05-21 16:09:37 -Registering beans for JMX exposure on startup
+2018-05-21 16:09:37 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-21 16:09:37 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-21 16:09:37 -Starting beans in phase 2147483647
+2018-05-21 16:09:37 -Context refreshed
+2018-05-21 16:09:37 -Found 1 custom documentation plugin(s)
+2018-05-21 16:09:37 -Scanning for api listing references
+2018-05-21 16:09:37 -Generating unique operation named: removeUsingPOST_1
+2018-05-21 16:09:37 -Generating unique operation named: addUsingGET_1
+2018-05-21 16:09:37 -Generating unique operation named: editUsingGET_1
+2018-05-21 16:09:37 -Generating unique operation named: listUsingGET_1
+2018-05-21 16:09:37 -Generating unique operation named: removeUsingPOST_2
+2018-05-21 16:09:37 -Generating unique operation named: removeUsingPOST_3
+2018-05-21 16:09:37 -Generating unique operation named: saveUsingPOST_1
+2018-05-21 16:09:37 -Generating unique operation named: updateUsingGET_1
+2018-05-21 16:09:37 -Generating unique operation named: updateUsingHEAD_1
+2018-05-21 16:09:37 -Generating unique operation named: updateUsingPOST_1
+2018-05-21 16:09:37 -Generating unique operation named: updateUsingPUT_1
+2018-05-21 16:09:37 -Generating unique operation named: updateUsingPATCH_1
+2018-05-21 16:09:37 -Generating unique operation named: updateUsingDELETE_1
+2018-05-21 16:09:37 -Generating unique operation named: updateUsingOPTIONS_1
+2018-05-21 16:09:37 -Generating unique operation named: updateUsingTRACE_1
+2018-05-21 16:09:37 -Generating unique operation named: addUsingGET_2
+2018-05-21 16:09:37 -Generating unique operation named: editUsingGET_2
+2018-05-21 16:09:37 -Generating unique operation named: listUsingGET_2
+2018-05-21 16:09:37 -Generating unique operation named: removeUsingPOST_4
+2018-05-21 16:09:37 -Generating unique operation named: removeUsingPOST_5
+2018-05-21 16:09:38 -Generating unique operation named: saveUsingPOST_2
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingGET_2
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingHEAD_2
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPOST_2
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPUT_2
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPATCH_2
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingDELETE_2
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingOPTIONS_2
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingTRACE_2
+2018-05-21 16:09:38 -Generating unique operation named: editUsingGET_3
+2018-05-21 16:09:38 -Generating unique operation named: listUsingGET_3
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPOST_3
+2018-05-21 16:09:38 -Generating unique operation named: addUsingGET_3
+2018-05-21 16:09:38 -Generating unique operation named: editUsingGET_4
+2018-05-21 16:09:38 -Generating unique operation named: infoUsingGET_1
+2018-05-21 16:09:38 -Generating unique operation named: infoUsingHEAD_1
+2018-05-21 16:09:38 -Generating unique operation named: infoUsingPOST_1
+2018-05-21 16:09:38 -Generating unique operation named: infoUsingPUT_1
+2018-05-21 16:09:38 -Generating unique operation named: infoUsingPATCH_1
+2018-05-21 16:09:38 -Generating unique operation named: infoUsingDELETE_1
+2018-05-21 16:09:38 -Generating unique operation named: infoUsingOPTIONS_1
+2018-05-21 16:09:38 -Generating unique operation named: infoUsingTRACE_1
+2018-05-21 16:09:38 -Generating unique operation named: listUsingGET_4
+2018-05-21 16:09:38 -Generating unique operation named: removeUsingPOST_6
+2018-05-21 16:09:38 -Generating unique operation named: removeUsingPOST_7
+2018-05-21 16:09:38 -Generating unique operation named: saveUsingPOST_3
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPOST_4
+2018-05-21 16:09:38 -Generating unique operation named: listUsingGET_5
+2018-05-21 16:09:38 -Generating unique operation named: removeUsingPOST_8
+2018-05-21 16:09:38 -Generating unique operation named: welcomeUsingGET_1
+2018-05-21 16:09:38 -Generating unique operation named: addUsingGET_4
+2018-05-21 16:09:38 -Generating unique operation named: editUsingGET_5
+2018-05-21 16:09:38 -Generating unique operation named: listUsingGET_6
+2018-05-21 16:09:38 -Generating unique operation named: removeUsingPOST_9
+2018-05-21 16:09:38 -Generating unique operation named: saveUsingPOST_4
+2018-05-21 16:09:38 -Generating unique operation named: treeUsingGET_1
+2018-05-21 16:09:38 -Generating unique operation named: treeUsingGET_2
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPOST_5
+2018-05-21 16:09:38 -Generating unique operation named: batchRemoveUsingPOST_1
+2018-05-21 16:09:38 -Generating unique operation named: editUsingGET_6
+2018-05-21 16:09:38 -Generating unique operation named: listUsingGET_7
+2018-05-21 16:09:38 -Generating unique operation named: addUsingGET_5
+2018-05-21 16:09:38 -Generating unique operation named: editUsingGET_7
+2018-05-21 16:09:38 -Generating unique operation named: listUsingGET_8
+2018-05-21 16:09:38 -Generating unique operation named: removeUsingPOST_10
+2018-05-21 16:09:38 -Generating unique operation named: removeUsingPOST_11
+2018-05-21 16:09:38 -Generating unique operation named: saveUsingPOST_5
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingGET_3
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingHEAD_3
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPOST_6
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPUT_3
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPATCH_3
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingDELETE_3
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingOPTIONS_3
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingTRACE_3
+2018-05-21 16:09:38 -Generating unique operation named: loginUsingGET_1
+2018-05-21 16:09:38 -Generating unique operation named: addUsingGET_6
+2018-05-21 16:09:38 -Generating unique operation named: batchRemoveUsingPOST_2
+2018-05-21 16:09:38 -Generating unique operation named: deployUsingPOST_1
+2018-05-21 16:09:38 -Generating unique operation named: listUsingGET_9
+2018-05-21 16:09:38 -Generating unique operation named: removeUsingPOST_12
+2018-05-21 16:09:38 -Generating unique operation named: addUsingGET_7
+2018-05-21 16:09:38 -Generating unique operation named: batchRemoveUsingPOST_3
+2018-05-21 16:09:38 -Generating unique operation named: editUsingGET_8
+2018-05-21 16:09:38 -Generating unique operation named: listUsingGET_10
+2018-05-21 16:09:38 -Generating unique operation named: saveUsingPOST_6
+2018-05-21 16:09:38 -Generating unique operation named: saveUsingPOST_7
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPOST_7
+2018-05-21 16:09:38 -Generating unique operation named: addUsingGET_8
+2018-05-21 16:09:38 -Generating unique operation named: editUsingGET_9
+2018-05-21 16:09:38 -Generating unique operation named: listUsingGET_11
+2018-05-21 16:09:38 -Generating unique operation named: removeUsingPOST_13
+2018-05-21 16:09:38 -Generating unique operation named: removeUsingPOST_14
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingGET_4
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingHEAD_4
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPOST_8
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPUT_4
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPATCH_4
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingDELETE_4
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingOPTIONS_4
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingTRACE_4
+2018-05-21 16:09:38 -Generating unique operation named: listUsingGET_12
+2018-05-21 16:09:38 -Generating unique operation named: listUsingHEAD_1
+2018-05-21 16:09:38 -Generating unique operation named: listUsingPOST_1
+2018-05-21 16:09:38 -Generating unique operation named: listUsingPUT_1
+2018-05-21 16:09:38 -Generating unique operation named: listUsingPATCH_1
+2018-05-21 16:09:38 -Generating unique operation named: listUsingDELETE_1
+2018-05-21 16:09:38 -Generating unique operation named: listUsingOPTIONS_1
+2018-05-21 16:09:38 -Generating unique operation named: listUsingTRACE_1
+2018-05-21 16:09:38 -Generating unique operation named: listUsingGET_13
+2018-05-21 16:09:38 -Generating unique operation named: addUsingGET_9
+2018-05-21 16:09:38 -Generating unique operation named: batchRemoveUsingPOST_4
+2018-05-21 16:09:38 -Generating unique operation named: editUsingGET_10
+2018-05-21 16:09:38 -Generating unique operation named: listUsingGET_14
+2018-05-21 16:09:38 -Generating unique operation named: removeUsingPOST_15
+2018-05-21 16:09:38 -Generating unique operation named: saveUsingPOST_8
+2018-05-21 16:09:38 -Generating unique operation named: treeUsingGET_3
+2018-05-21 16:09:38 -Generating unique operation named: treeViewUsingGET_1
+2018-05-21 16:09:38 -Generating unique operation named: updateUsingPOST_9
+2018-05-21 16:09:38 -Starting Quartz Scheduler now
+2018-05-21 16:09:38 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2018-05-21 16:09:38 -Starting...
+2018-05-21 16:09:38 -BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-05-21 16:09:38 -Started.
+2018-05-21 16:09:38 -Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-21 16:09:38 -Starting ProtocolHandler ["http-nio-8080"]
+2018-05-21 16:09:39 -Using a shared selector for servlet write/read
+2018-05-21 16:09:39 -Tomcat started on port(s): 8080 (http)
+2018-05-21 16:09:39 -Started BootdoApplication in 14.976 seconds (JVM running for 19.071)
+2018-05-21 16:10:34 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2018-05-21 16:15:19 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-21 16:15:19 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-21 16:15:19 -FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2018-05-21 16:15:20 -Enabling session validation scheduler...
+2018-05-21 16:15:20 -[THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-05-21 16:15:20 -[THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-05-21 16:15:20 -[THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-05-21 16:15:20 -[THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-05-21 16:15:20 -[THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-05-21 16:15:20 -[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 3]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 3]: at.pollux.thymeleaf.shiro.dialect.ShiroDialect
+[THYMELEAF]     * Prefix: "shiro"
+[THYMELEAF] * Dialect [3 of 3]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-05-21 16:15:20 -[THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-05-21 16:15:24 -More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [clientInboundChannelExecutor, clientOutboundChannelExecutor, brokerChannelExecutor, messageBrokerTaskScheduler]
+2018-05-21 16:25:07 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@726cb032: startup date [Mon May 21 16:09:25 CST 2018]; root of context hierarchy
+2018-05-21 16:25:07 -Stopping beans in phase 2147483647
+2018-05-21 16:25:07 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2018-05-21 16:25:07 -Stopping...
+2018-05-21 16:25:07 -BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-05-21 16:25:07 -Stopped.
+2018-05-21 16:25:07 -Unregistering JMX-exposed beans on shutdown
+2018-05-21 16:25:07 -Unregistering JMX-exposed beans
+2018-05-21 16:25:07 -Shutting down ExecutorService 'brokerChannelExecutor'
+2018-05-21 16:25:07 -Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2018-05-21 16:25:07 -Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2018-05-21 16:25:07 -Shutting down ExecutorService 'clientInboundChannelExecutor'
+2018-05-21 16:25:07 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutting down.
+2018-05-21 16:25:07 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2018-05-21 16:25:07 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutdown complete.
+2018-05-21 16:25:07 -Shutting down Quartz Scheduler
+2018-05-21 16:25:07 -{dataSource-1} closed
+2018-05-21 16:25:07 -Disabled session validation scheduler.
+2018-05-21 16:25:08 -Starting BootdoApplication on PC-20170704VKZJ with PID 15704 (E:\QYTLYSK\QYTLYSK_1.0\QYTKJ_LYSK\target\classes started by Administrator in E:\QYTLYSK\QYTLYSK_1.0\QYTKJ_LYSK)
+2018-05-21 16:25:08 -The following profiles are active: dev
+2018-05-21 16:25:08 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66843639: startup date [Mon May 21 16:25:08 CST 2018]; root of context hierarchy
+2018-05-21 16:25:08 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-21 16:25:08 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f5f977ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:25:08 -Bean 'shiroConfig' of type [com.qytkj.BluetoothWaterControl.backgroundManagement.config.ShiroConfig$$EnhancerBySpringCGLIB$$b447b02b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:25:08 -Bean 'userRealm' of type [com.qytkj.BluetoothWaterControl.backgroundManagement.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:25:08 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:25:08 -Cache with name 'com.qytkj.BluetoothWaterControl.backgroundManagement.shiro.UserRealm.authorizationCache.1' does not yet exist.  Creating now.
+2018-05-21 16:25:08 -Added EhCache named [com.qytkj.BluetoothWaterControl.backgroundManagement.shiro.UserRealm.authorizationCache.1]
+2018-05-21 16:25:08 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:25:08 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:25:08 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:25:08 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 16:25:08 -Tomcat initialized with port(s): 8080 (http)
+2018-05-21 16:25:08 -Starting service [Tomcat]
+2018-05-21 16:25:08 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-05-21 16:25:08 -Initializing Spring embedded WebApplicationContext
+2018-05-21 16:25:08 -Root WebApplicationContext: initialization completed in 916 ms
+2018-05-21 16:25:09 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-21 16:25:09 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-21 16:25:09 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-21 16:25:09 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-21 16:25:09 -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-05-21 16:25:09 -Filter xssFilter was not registered (disabled)
+2018-05-21 16:25:09 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-05-21 16:25:09 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2018-05-21 16:25:09 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-05-21 16:25:09 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-21 16:25:09 -{dataSource-2} inited
+2018-05-21 16:25:09 -ProcessEngine default created
+2018-05-21 16:25:10 -Using default implementation for ThreadExecutor
+2018-05-21 16:25:10 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-05-21 16:25:10 -Quartz Scheduler v.2.2.1 created.
+2018-05-21 16:25:10 -RAMJobStore initialized.
+2018-05-21 16:25:10 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-05-21 16:25:10 -Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2018-05-21 16:25:10 -Quartz scheduler version: 2.2.1
+2018-05-21 16:25:10 -JobFactory set to: com.qytkj.BluetoothWaterControl.common.quartz.factory.JobFactory@33c769b1
+2018-05-21 16:25:10 -Initializing ExecutorService  'clientInboundChannelExecutor'
+2018-05-21 16:25:10 -Initializing ExecutorService  'clientOutboundChannelExecutor'
+2018-05-21 16:25:10 -Mapped "{[/activiti/model/{id}],methods=[DELETE]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.remove(java.lang.String)
+2018-05-21 16:25:10 -Mapped "{[/activiti/model/list],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.list(int,int)
+2018-05-21 16:25:10 -Mapped "{[/activiti/model/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.batchRemove(java.lang.String[])
+2018-05-21 16:25:10 -Mapped "{[/activiti/model],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.model()
+2018-05-21 16:25:10 -Mapped "{[/activiti/model/add]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.newModel(javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-05-21 16:25:10 -Mapped "{[/activiti/model/{modelId}/save],methods=[PUT]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.saveModel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-21 16:25:10 -Mapped "{[/activiti/model/{modelId}/json],methods=[GET]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.getEditorJson(java.lang.String)
+2018-05-21 16:25:10 -Mapped "{[/activiti/editor/stencilset],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.getStencilset()
+2018-05-21 16:25:10 -Mapped "{[/activiti/model/edit/{id}],methods=[GET]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.edit(javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-05-21 16:25:10 -Mapped "{[/activiti/model/deploy/{id}],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.deploy(java.lang.String) throws java.lang.Exception
+2018-05-21 16:25:10 -Mapped "{[/activiti/model/export/{id}],methods=[GET]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.exportToXml(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-05-21 16:25:10 -Mapped "{[/activiti/process/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.add()
+2018-05-21 16:25:10 -Mapped "{[/activiti/process/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.remove(java.lang.String)
+2018-05-21 16:25:10 -Mapped "{[/activiti/process/list],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.list(int,int)
+2018-05-21 16:25:10 -Mapped "{[/activiti/process/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.batchRemove(java.lang.String[])
+2018-05-21 16:25:10 -Mapped "{[/activiti/process],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.process()
+2018-05-21 16:25:10 -Mapped "{[/activiti/process/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.deploy(java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile)
+2018-05-21 16:25:10 -Mapped "{[/activiti/process/convertToModel/{procDefId}]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.convertToModel(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.io.UnsupportedEncodingException,javax.xml.stream.XMLStreamException
+2018-05-21 16:25:10 -Mapped "{[/activiti/process/resource/read/{xml}/{id}]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.resourceRead(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-05-21 16:25:10 -Mapped "{[/act/salary/form],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.add()
+2018-05-21 16:25:10 -Mapped "{[/act/salary/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.remove(java.lang.String)
+2018-05-21 16:25:10 -Mapped "{[/act/salary/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.remove(java.lang.String[])
+2018-05-21 16:25:10 -Mapped "{[/act/salary/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.update(com.qytkj.BluetoothWaterControl.activiti.domain.SalaryDO)
+2018-05-21 16:25:10 -Mapped "{[/act/salary/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:25:10 -Mapped "{[/act/salary/form/{taskId}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.edit(java.lang.String,org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/act/salary],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.Salary()
+2018-05-21 16:25:10 -Mapped "{[/act/salary/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.saveOrUpdate(com.qytkj.BluetoothWaterControl.activiti.domain.SalaryDO)
+2018-05-21 16:25:10 -Mapped "{[/activiti/task/form/{procDefId}/{taskId}],methods=[GET]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.form(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-05-21 16:25:10 -Mapped "{[/activiti/task/gotoList],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.list(int,int)
+2018-05-21 16:25:10 -Mapped "{[/activiti/task/goto],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.gotoTask()
+2018-05-21 16:25:10 -Mapped "{[/activiti/task/form/{procDefId}],methods=[GET]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.startForm(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-05-21 16:25:10 -Mapped "{[/activiti/task/todo],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.todo()
+2018-05-21 16:25:10 -Mapped "{[/activiti/task/todoList],methods=[GET]}" onto java.util.List<com.qytkj.BluetoothWaterControl.activiti.vo.TaskVO> com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.todoList()
+2018-05-21 16:25:10 -Mapped "{[/activiti/task/trace/photo/{procDefId}/{execId}]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.tracePhoto(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-05-21 16:25:10 -Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.remove(java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.remove(java.lang.Long[])
+2018-05-21 16:25:10 -Mapped "{[/system/sysDept/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.update(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO)
+2018-05-21 16:25:10 -Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.list()
+2018-05-21 16:25:10 -Mapped "{[/system/sysDept/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.save(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO)
+2018-05-21 16:25:10 -Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.domain.Tree<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.tree()
+2018-05-21 16:25:10 -Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.dept()
+2018-05-21 16:25:10 -Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.treeView()
+2018-05-21 16:25:10 -Mapped "{[/homePage],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.index(org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.main()
+2018-05-21 16:25:10 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.logout()
+2018-05-21 16:25:10 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.welcome(org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.login()
+2018-05-21 16:25:10 -Mapped "{[/login],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2018-05-21 16:25:10 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.remove(java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.update(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO)
+2018-05-21 16:25:10 -Mapped "{[/sys/menu/list]}" onto java.util.List<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:25:10 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.save(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO)
+2018-05-21 16:25:10 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.domain.Tree<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.tree(java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.domain.Tree<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.tree()
+2018-05-21 16:25:10 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.menu(org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.add()
+2018-05-21 16:25:10 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.update(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleDO)
+2018-05-21 16:25:10 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.list()
+2018-05-21 16:25:10 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.save(java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.save(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleDO)
+2018-05-21 16:25:10 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.batchRemove(java.lang.Long[])
+2018-05-21 16:25:10 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.role()
+2018-05-21 16:25:10 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserOnline> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.SessionController.list()
+2018-05-21 16:25:10 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.SessionController.online()
+2018-05-21 16:25:10 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-05-21 16:25:10 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.SessionController.sessionList()
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/exit],methods=[POST]}" onto boolean com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.add(org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/remove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.remove(java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/update],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.update(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO)
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/list],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/save],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.save(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO)
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/batchRemove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.batchRemove(java.lang.Long[])
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/tree],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.domain.Tree<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.tree()
+2018-05-21 16:25:10 -Mapped "{[/backStage/user],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.user(org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/treeView],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.treeView()
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/updatePeronal],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.updatePeronal(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO)
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/resetPwd],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.resetPwd(com.qytkj.BluetoothWaterControl.backgroundManagement.vo.UserVO)
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/adminResetPwd],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.adminResetPwd(com.qytkj.BluetoothWaterControl.backgroundManagement.vo.UserVO)
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/personal],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.personal(org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/backStage/user/uploadImg],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-05-21 16:25:10 -Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.DictController.add()
+2018-05-21 16:25:10 -Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.DictController.remove(java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.DictController.remove(java.lang.Long[])
+2018-05-21 16:25:10 -Mapped "{[/common/dict/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.DictController.update(com.qytkj.BluetoothWaterControl.common.domain.DictDO)
+2018-05-21 16:25:10 -Mapped "{[/common/dict/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:25:10 -Mapped "{[/common/dict/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.DictController.save(com.qytkj.BluetoothWaterControl.common.domain.DictDO)
+2018-05-21 16:25:10 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.qytkj.BluetoothWaterControl.common.domain.DictDO> com.qytkj.BluetoothWaterControl.common.controller.DictController.listType()
+2018-05-21 16:25:10 -Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.DictController.dict()
+2018-05-21 16:25:10 -Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-05-21 16:25:10 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.qytkj.BluetoothWaterControl.common.domain.DictDO> com.qytkj.BluetoothWaterControl.common.controller.DictController.listByType(java.lang.String)
+2018-05-21 16:25:10 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.FileController.add()
+2018-05-21 16:25:10 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-05-21 16:25:10 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.remove(java.lang.Long[])
+2018-05-21 16:25:10 -Mapped "{[/common/sysFile/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.update(com.qytkj.BluetoothWaterControl.common.domain.FileDO)
+2018-05-21 16:25:10 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:25:10 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.save(com.qytkj.BluetoothWaterControl.common.domain.FileDO)
+2018-05-21 16:25:10 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.info(java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018-05-21 16:25:10 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:25:10 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.list()
+2018-05-21 16:25:10 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-05-21 16:25:10 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.generator()
+2018-05-21 16:25:10 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/common/generator/batchCode]}" onto public void com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-05-21 16:25:10 -Mapped "{[/common/job/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.JobController.add()
+2018-05-21 16:25:10 -Mapped "{[/common/job/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.remove(java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/common/job/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.remove(java.lang.Long[])
+2018-05-21 16:25:10 -Mapped "{[/common/job/update],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.update(com.qytkj.BluetoothWaterControl.common.domain.TaskDO)
+2018-05-21 16:25:10 -Mapped "{[/common/job/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.common.controller.JobController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:25:10 -Mapped "{[/common/job/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.save(com.qytkj.BluetoothWaterControl.common.domain.TaskDO)
+2018-05-21 16:25:10 -Mapped "{[/common/job/info/{id}]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.info(java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/common/job/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.JobController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/common/job/changeJobStatus],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.changeJobStatus(java.lang.Long,java.lang.String)
+2018-05-21 16:25:10 -Mapped "{[/common/job],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.JobController.taskScheduleJob()
+2018-05-21 16:25:10 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.LogController.remove(java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.LogController.log()
+2018-05-21 16:25:10 -Mapped "{[/common/log/list],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.domain.PageDO<com.qytkj.BluetoothWaterControl.common.domain.LogDO> com.qytkj.BluetoothWaterControl.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:25:10 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.LogController.batchRemove(java.lang.Long[])
+2018-05-21 16:25:10 -Mapped "{[/error]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-21 16:25:10 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-21 16:25:10 -Mapped "{[/oa/notify/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.add()
+2018-05-21 16:25:10 -Mapped "{[/oa/notify/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.remove(java.lang.Long)
+2018-05-21 16:25:10 -Mapped "{[/oa/notify/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.remove(java.lang.Long[])
+2018-05-21 16:25:10 -Mapped "{[/oa/notify/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.update(com.qytkj.BluetoothWaterControl.oa.domain.NotifyDO)
+2018-05-21 16:25:10 -Mapped "{[/oa/notify/read/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.read(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/oa/notify/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:25:10 -Mapped "{[/oa/notify/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.save(com.qytkj.BluetoothWaterControl.oa.domain.NotifyDO)
+2018-05-21 16:25:10 -Mapped "{[/oa/notify/message],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.message()
+2018-05-21 16:25:10 -Mapped "{[/oa/notify/selfList],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.selfList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 16:25:10 -Mapped "{[/oa/notify/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 16:25:10 -Mapped "{[/oa/notify],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.oaNotify()
+2018-05-21 16:25:10 -Mapped "{[/oa/notify/selfNotify],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.selefNotify()
+2018-05-21 16:25:10 -Mapped "{[/operUser/getAddress],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.qytkj.BluetoothWaterControl.operation.controller.OperUserController.getAddress()
+2018-05-21 16:25:10 -Mapped "{[/operUser/getUser],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.qytkj.BluetoothWaterControl.operation.controller.OperUserController.getUser()
+2018-05-21 16:25:10 -Mapped "{[/operUser/login],methods=[GET]}" onto public java.lang.String com.qytkj.BluetoothWaterControl.operation.controller.OperUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2018-05-21 16:25:10 -Mapped "{[/operUser/updatePassword],methods=[POST]}" onto public java.lang.Integer com.qytkj.BluetoothWaterControl.operation.controller.OperUserController.updatePassword(java.lang.String,java.lang.String)
+2018-05-21 16:25:10 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-05-21 16:25:10 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-21 16:25:10 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-21 16:25:10 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-21 16:25:10 -Initializing ExecutorService  'messageBrokerTaskScheduler'
+2018-05-21 16:25:10 -Mapped URL path [/endpointChat/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2018-05-21 16:25:10 -Initializing ExecutorService  'brokerChannelExecutor'
+2018-05-21 16:25:11 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66843639: startup date [Mon May 21 16:25:08 CST 2018]; root of context hierarchy
+2018-05-21 16:25:11 -Mapped URL path [/files/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-21 16:25:11 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-21 16:25:11 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-21 16:25:11 -Detected @ExceptionHandler methods in BDExceptionHandler
+2018-05-21 16:25:11 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-21 16:25:11 -
+
+Using default security password: ff13181b-fdf0-4dc7-9393-8962bde4b67f
+
+2018-05-21 16:25:11 -Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2018-05-21 16:25:11 -Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@ca80263, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69107479, org.springframework.security.web.context.SecurityContextPersistenceFilter@3dc7c684, org.springframework.security.web.header.HeaderWriterFilter@6cbf14ae, org.springframework.security.web.csrf.CsrfFilter@5d98e454, org.springframework.security.web.authentication.logout.LogoutFilter@f5806ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54c1235, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11c26c56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b3215d1, org.springframework.security.web.session.SessionManagementFilter@27673c78, org.springframework.security.web.access.ExceptionTranslationFilter@39f02869]
+2018-05-21 16:25:11 -LiveReload server is running on port 35729
+2018-05-21 16:25:11 -Registering beans for JMX exposure on startup
+2018-05-21 16:25:11 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-21 16:25:11 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-21 16:25:11 -Starting beans in phase 2147483647
+2018-05-21 16:25:11 -Context refreshed
+2018-05-21 16:25:12 -Found 1 custom documentation plugin(s)
+2018-05-21 16:25:12 -Scanning for api listing references
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_1
+2018-05-21 16:25:12 -Generating unique operation named: addUsingGET_1
+2018-05-21 16:25:12 -Generating unique operation named: editUsingGET_1
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_1
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_2
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_3
+2018-05-21 16:25:12 -Generating unique operation named: saveUsingPOST_1
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingGET_1
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingHEAD_1
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPOST_1
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPUT_1
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPATCH_1
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingDELETE_1
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingOPTIONS_1
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingTRACE_1
+2018-05-21 16:25:12 -Generating unique operation named: addUsingGET_2
+2018-05-21 16:25:12 -Generating unique operation named: editUsingGET_2
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_2
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_4
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_5
+2018-05-21 16:25:12 -Generating unique operation named: saveUsingPOST_2
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingGET_2
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingHEAD_2
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPOST_2
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPUT_2
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPATCH_2
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingDELETE_2
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingOPTIONS_2
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingTRACE_2
+2018-05-21 16:25:12 -Generating unique operation named: editUsingGET_3
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_3
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPOST_3
+2018-05-21 16:25:12 -Generating unique operation named: addUsingGET_3
+2018-05-21 16:25:12 -Generating unique operation named: editUsingGET_4
+2018-05-21 16:25:12 -Generating unique operation named: infoUsingGET_1
+2018-05-21 16:25:12 -Generating unique operation named: infoUsingHEAD_1
+2018-05-21 16:25:12 -Generating unique operation named: infoUsingPOST_1
+2018-05-21 16:25:12 -Generating unique operation named: infoUsingPUT_1
+2018-05-21 16:25:12 -Generating unique operation named: infoUsingPATCH_1
+2018-05-21 16:25:12 -Generating unique operation named: infoUsingDELETE_1
+2018-05-21 16:25:12 -Generating unique operation named: infoUsingOPTIONS_1
+2018-05-21 16:25:12 -Generating unique operation named: infoUsingTRACE_1
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_4
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_6
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_7
+2018-05-21 16:25:12 -Generating unique operation named: saveUsingPOST_3
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPOST_4
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_5
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_8
+2018-05-21 16:25:12 -Generating unique operation named: welcomeUsingGET_1
+2018-05-21 16:25:12 -Generating unique operation named: addUsingGET_4
+2018-05-21 16:25:12 -Generating unique operation named: editUsingGET_5
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_6
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_9
+2018-05-21 16:25:12 -Generating unique operation named: saveUsingPOST_4
+2018-05-21 16:25:12 -Generating unique operation named: treeUsingGET_1
+2018-05-21 16:25:12 -Generating unique operation named: treeUsingGET_2
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPOST_5
+2018-05-21 16:25:12 -Generating unique operation named: batchRemoveUsingPOST_1
+2018-05-21 16:25:12 -Generating unique operation named: editUsingGET_6
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_7
+2018-05-21 16:25:12 -Generating unique operation named: addUsingGET_5
+2018-05-21 16:25:12 -Generating unique operation named: editUsingGET_7
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_8
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_10
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_11
+2018-05-21 16:25:12 -Generating unique operation named: saveUsingPOST_5
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingGET_3
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingHEAD_3
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPOST_6
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPUT_3
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPATCH_3
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingDELETE_3
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingOPTIONS_3
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingTRACE_3
+2018-05-21 16:25:12 -Generating unique operation named: loginUsingGET_1
+2018-05-21 16:25:12 -Generating unique operation named: addUsingGET_6
+2018-05-21 16:25:12 -Generating unique operation named: batchRemoveUsingPOST_2
+2018-05-21 16:25:12 -Generating unique operation named: deployUsingPOST_1
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_9
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_12
+2018-05-21 16:25:12 -Generating unique operation named: addUsingGET_7
+2018-05-21 16:25:12 -Generating unique operation named: batchRemoveUsingPOST_3
+2018-05-21 16:25:12 -Generating unique operation named: editUsingGET_8
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_10
+2018-05-21 16:25:12 -Generating unique operation named: saveUsingPOST_6
+2018-05-21 16:25:12 -Generating unique operation named: saveUsingPOST_7
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPOST_7
+2018-05-21 16:25:12 -Generating unique operation named: addUsingGET_8
+2018-05-21 16:25:12 -Generating unique operation named: editUsingGET_9
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_11
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_13
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_14
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingGET_4
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingHEAD_4
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPOST_8
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPUT_4
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPATCH_4
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingDELETE_4
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingOPTIONS_4
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingTRACE_4
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_12
+2018-05-21 16:25:12 -Generating unique operation named: listUsingHEAD_1
+2018-05-21 16:25:12 -Generating unique operation named: listUsingPOST_1
+2018-05-21 16:25:12 -Generating unique operation named: listUsingPUT_1
+2018-05-21 16:25:12 -Generating unique operation named: listUsingPATCH_1
+2018-05-21 16:25:12 -Generating unique operation named: listUsingDELETE_1
+2018-05-21 16:25:12 -Generating unique operation named: listUsingOPTIONS_1
+2018-05-21 16:25:12 -Generating unique operation named: listUsingTRACE_1
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_13
+2018-05-21 16:25:12 -Generating unique operation named: addUsingGET_9
+2018-05-21 16:25:12 -Generating unique operation named: batchRemoveUsingPOST_4
+2018-05-21 16:25:12 -Generating unique operation named: editUsingGET_10
+2018-05-21 16:25:12 -Generating unique operation named: listUsingGET_14
+2018-05-21 16:25:12 -Generating unique operation named: removeUsingPOST_15
+2018-05-21 16:25:12 -Generating unique operation named: saveUsingPOST_8
+2018-05-21 16:25:12 -Generating unique operation named: treeUsingGET_3
+2018-05-21 16:25:12 -Generating unique operation named: treeViewUsingGET_1
+2018-05-21 16:25:12 -Generating unique operation named: updateUsingPOST_9
+2018-05-21 16:25:12 -Starting Quartz Scheduler now
+2018-05-21 16:25:12 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2018-05-21 16:25:12 -Starting...
+2018-05-21 16:25:12 -BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-05-21 16:25:12 -Started.
+2018-05-21 16:25:12 -Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-21 16:25:12 -Starting ProtocolHandler ["http-nio-8080"]
+2018-05-21 16:25:12 -Using a shared selector for servlet write/read
+2018-05-21 16:25:12 -Tomcat started on port(s): 8080 (http)
+2018-05-21 16:25:12 -Started BootdoApplication in 4.674 seconds (JVM running for 952.588)
+2018-05-21 16:26:10 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2018-05-21 16:56:11 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2018-05-21 17:26:11 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]
+2018-05-21 17:27:48 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-21 17:27:48 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-21 17:27:48 -FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-05-21 17:27:48 -Enabling session validation scheduler...
+2018-05-21 17:27:48 -[THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-05-21 17:27:48 -[THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-05-21 17:27:48 -[THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-05-21 17:27:48 -[THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-05-21 17:27:48 -[THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-05-21 17:27:48 -[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 3]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 3]: at.pollux.thymeleaf.shiro.dialect.ShiroDialect
+[THYMELEAF]     * Prefix: "shiro"
+[THYMELEAF] * Dialect [3 of 3]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-05-21 17:27:48 -[THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-05-21 17:27:53 -More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [clientInboundChannelExecutor, clientOutboundChannelExecutor, brokerChannelExecutor, messageBrokerTaskScheduler]
+2018-05-21 17:30:32 -null
+java.lang.NullPointerException: null
+	at com.qytkj.BluetoothWaterControl.backgroundManagement.service.impl.UserServiceImpl.get(UserServiceImpl.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy164.get(Unknown Source)
+	at com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.edit(UserController.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:741)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.qytkj.BluetoothWaterControl.common.aspect.LogAspect.around(LogAspect.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController$$EnhancerBySpringCGLIB$$195c419b.edit(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-05-21 17:30:32 -Resolved exception caused by Handler execution: java.lang.NullPointerException
+2018-05-21 17:30:52 -null
+java.lang.NullPointerException: null
+	at com.qytkj.BluetoothWaterControl.backgroundManagement.service.impl.UserServiceImpl.get(UserServiceImpl.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy164.get(Unknown Source)
+	at com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.edit(UserController.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:741)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.qytkj.BluetoothWaterControl.common.aspect.LogAspect.around(LogAspect.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor$1.proceed(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:82)
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:39)
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController$$EnhancerBySpringCGLIB$$195c419b.edit(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-05-21 17:30:52 -Resolved exception caused by Handler execution: java.lang.NullPointerException
+2018-05-21 17:56:11 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 3]
+2018-05-21 18:18:20 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66843639: startup date [Mon May 21 16:25:08 CST 2018]; root of context hierarchy
+2018-05-21 18:18:20 -Stopping beans in phase 2147483647
+2018-05-21 18:18:20 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2018-05-21 18:18:20 -Stopping...
+2018-05-21 18:18:20 -BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-05-21 18:18:20 -Stopped.
+2018-05-21 18:18:20 -Unregistering JMX-exposed beans on shutdown
+2018-05-21 18:18:20 -Unregistering JMX-exposed beans
+2018-05-21 18:18:20 -Shutting down ExecutorService 'brokerChannelExecutor'
+2018-05-21 18:18:20 -Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2018-05-21 18:18:20 -Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2018-05-21 18:18:20 -Shutting down ExecutorService 'clientInboundChannelExecutor'
+2018-05-21 18:18:20 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutting down.
+2018-05-21 18:18:20 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2018-05-21 18:18:20 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutdown complete.
+2018-05-21 18:18:20 -Shutting down Quartz Scheduler
+2018-05-21 18:18:20 -{dataSource-2} closed
+2018-05-21 18:18:20 -Disabled session validation scheduler.
+2018-05-21 18:18:21 -Starting BootdoApplication on PC-20170704VKZJ with PID 15704 (E:\QYTLYSK\QYTLYSK_1.0\QYTKJ_LYSK\target\classes started by Administrator in E:\QYTLYSK\QYTLYSK_1.0\QYTKJ_LYSK)
+2018-05-21 18:18:21 -The following profiles are active: dev
+2018-05-21 18:18:21 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b226d13: startup date [Mon May 21 18:18:21 CST 2018]; root of context hierarchy
+2018-05-21 18:18:21 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-21 18:18:21 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f5f977ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 18:18:21 -Bean 'shiroConfig' of type [com.qytkj.BluetoothWaterControl.backgroundManagement.config.ShiroConfig$$EnhancerBySpringCGLIB$$b447b02b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 18:18:21 -Bean 'userRealm' of type [com.qytkj.BluetoothWaterControl.backgroundManagement.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 18:18:21 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 18:18:21 -Cache with name 'com.qytkj.BluetoothWaterControl.backgroundManagement.shiro.UserRealm.authorizationCache.2' does not yet exist.  Creating now.
+2018-05-21 18:18:21 -Added EhCache named [com.qytkj.BluetoothWaterControl.backgroundManagement.shiro.UserRealm.authorizationCache.2]
+2018-05-21 18:18:21 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 18:18:21 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 18:18:21 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 18:18:21 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-21 18:18:22 -Tomcat initialized with port(s): 8080 (http)
+2018-05-21 18:18:22 -Starting service [Tomcat]
+2018-05-21 18:18:22 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-05-21 18:18:22 -Initializing Spring embedded WebApplicationContext
+2018-05-21 18:18:22 -Root WebApplicationContext: initialization completed in 1009 ms
+2018-05-21 18:18:22 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-21 18:18:22 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-21 18:18:22 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-21 18:18:22 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-21 18:18:22 -Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-05-21 18:18:22 -Filter xssFilter was not registered (disabled)
+2018-05-21 18:18:22 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-05-21 18:18:22 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2018-05-21 18:18:22 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-05-21 18:18:22 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-21 18:18:22 -{dataSource-3} inited
+2018-05-21 18:18:22 -ProcessEngine default created
+2018-05-21 18:18:23 -Using default implementation for ThreadExecutor
+2018-05-21 18:18:23 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-05-21 18:18:23 -Quartz Scheduler v.2.2.1 created.
+2018-05-21 18:18:23 -RAMJobStore initialized.
+2018-05-21 18:18:23 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-05-21 18:18:23 -Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2018-05-21 18:18:23 -Quartz scheduler version: 2.2.1
+2018-05-21 18:18:23 -JobFactory set to: com.qytkj.BluetoothWaterControl.common.quartz.factory.JobFactory@342a5206
+2018-05-21 18:18:23 -Initializing ExecutorService  'clientInboundChannelExecutor'
+2018-05-21 18:18:23 -Initializing ExecutorService  'clientOutboundChannelExecutor'
+2018-05-21 18:18:24 -Mapped "{[/activiti/model/{id}],methods=[DELETE]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.remove(java.lang.String)
+2018-05-21 18:18:24 -Mapped "{[/activiti/model/list],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.list(int,int)
+2018-05-21 18:18:24 -Mapped "{[/activiti/model/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.batchRemove(java.lang.String[])
+2018-05-21 18:18:24 -Mapped "{[/activiti/model],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.model()
+2018-05-21 18:18:24 -Mapped "{[/activiti/model/add]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.newModel(javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-05-21 18:18:24 -Mapped "{[/activiti/model/{modelId}/save],methods=[PUT]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.saveModel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-21 18:18:24 -Mapped "{[/activiti/model/{modelId}/json],methods=[GET]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.getEditorJson(java.lang.String)
+2018-05-21 18:18:24 -Mapped "{[/activiti/editor/stencilset],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.getStencilset()
+2018-05-21 18:18:24 -Mapped "{[/activiti/model/edit/{id}],methods=[GET]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.edit(javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-05-21 18:18:24 -Mapped "{[/activiti/model/deploy/{id}],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.deploy(java.lang.String) throws java.lang.Exception
+2018-05-21 18:18:24 -Mapped "{[/activiti/model/export/{id}],methods=[GET]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ModelController.exportToXml(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-05-21 18:18:24 -Mapped "{[/activiti/process/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.add()
+2018-05-21 18:18:24 -Mapped "{[/activiti/process/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.remove(java.lang.String)
+2018-05-21 18:18:24 -Mapped "{[/activiti/process/list],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.list(int,int)
+2018-05-21 18:18:24 -Mapped "{[/activiti/process/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.batchRemove(java.lang.String[])
+2018-05-21 18:18:24 -Mapped "{[/activiti/process],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.process()
+2018-05-21 18:18:24 -Mapped "{[/activiti/process/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.deploy(java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile)
+2018-05-21 18:18:24 -Mapped "{[/activiti/process/convertToModel/{procDefId}]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.convertToModel(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.io.UnsupportedEncodingException,javax.xml.stream.XMLStreamException
+2018-05-21 18:18:24 -Mapped "{[/activiti/process/resource/read/{xml}/{id}]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.ProcessController.resourceRead(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-05-21 18:18:24 -Mapped "{[/act/salary/form],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.add()
+2018-05-21 18:18:24 -Mapped "{[/act/salary/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.remove(java.lang.String)
+2018-05-21 18:18:24 -Mapped "{[/act/salary/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.remove(java.lang.String[])
+2018-05-21 18:18:24 -Mapped "{[/act/salary/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.update(com.qytkj.BluetoothWaterControl.activiti.domain.SalaryDO)
+2018-05-21 18:18:24 -Mapped "{[/act/salary/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 18:18:24 -Mapped "{[/act/salary/form/{taskId}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.edit(java.lang.String,org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/act/salary],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.Salary()
+2018-05-21 18:18:24 -Mapped "{[/act/salary/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.activiti.controller.SalaryController.saveOrUpdate(com.qytkj.BluetoothWaterControl.activiti.domain.SalaryDO)
+2018-05-21 18:18:24 -Mapped "{[/activiti/task/form/{procDefId}/{taskId}],methods=[GET]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.form(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-05-21 18:18:24 -Mapped "{[/activiti/task/gotoList],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.list(int,int)
+2018-05-21 18:18:24 -Mapped "{[/activiti/task/goto],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.gotoTask()
+2018-05-21 18:18:24 -Mapped "{[/activiti/task/form/{procDefId}],methods=[GET]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.startForm(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-05-21 18:18:24 -Mapped "{[/activiti/task/todo],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.todo()
+2018-05-21 18:18:24 -Mapped "{[/activiti/task/todoList],methods=[GET]}" onto java.util.List<com.qytkj.BluetoothWaterControl.activiti.vo.TaskVO> com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.todoList()
+2018-05-21 18:18:24 -Mapped "{[/activiti/task/trace/photo/{procDefId}/{execId}]}" onto public void com.qytkj.BluetoothWaterControl.activiti.controller.TaskController.tracePhoto(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-05-21 18:18:24 -Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.remove(java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.remove(java.lang.Long[])
+2018-05-21 18:18:24 -Mapped "{[/system/sysDept/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.update(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO)
+2018-05-21 18:18:24 -Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.list()
+2018-05-21 18:18:24 -Mapped "{[/system/sysDept/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.save(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO)
+2018-05-21 18:18:24 -Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.domain.Tree<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.tree()
+2018-05-21 18:18:24 -Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.dept()
+2018-05-21 18:18:24 -Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.DeptController.treeView()
+2018-05-21 18:18:24 -Mapped "{[/homePage],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.index(org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.main()
+2018-05-21 18:18:24 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.logout()
+2018-05-21 18:18:24 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.welcome(org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.login()
+2018-05-21 18:18:24 -Mapped "{[/login],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2018-05-21 18:18:24 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.remove(java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.update(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO)
+2018-05-21 18:18:24 -Mapped "{[/sys/menu/list]}" onto java.util.List<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 18:18:24 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.save(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO)
+2018-05-21 18:18:24 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.domain.Tree<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.tree(java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.domain.Tree<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.MenuDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.tree()
+2018-05-21 18:18:24 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.MenuController.menu(org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.add()
+2018-05-21 18:18:24 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.update(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleDO)
+2018-05-21 18:18:24 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.list()
+2018-05-21 18:18:24 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.save(java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.save(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.RoleDO)
+2018-05-21 18:18:24 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.batchRemove(java.lang.Long[])
+2018-05-21 18:18:24 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.role()
+2018-05-21 18:18:24 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserOnline> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.SessionController.list()
+2018-05-21 18:18:24 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.SessionController.online()
+2018-05-21 18:18:24 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-05-21 18:18:24 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.SessionController.sessionList()
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/exit],methods=[POST]}" onto boolean com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.add(org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/remove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.remove(java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/update],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.update(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO)
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/list],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/save],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.save(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO)
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/batchRemove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.batchRemove(java.lang.Long[])
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/tree],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.domain.Tree<com.qytkj.BluetoothWaterControl.backgroundManagement.domain.DeptDO> com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.tree()
+2018-05-21 18:18:24 -Mapped "{[/backStage/user],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.user(org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/treeView],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.treeView()
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/updatePeronal],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.updatePeronal(com.qytkj.BluetoothWaterControl.backgroundManagement.domain.UserDO)
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/resetPwd],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.resetPwd(com.qytkj.BluetoothWaterControl.backgroundManagement.vo.UserVO)
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/adminResetPwd],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.adminResetPwd(com.qytkj.BluetoothWaterControl.backgroundManagement.vo.UserVO)
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/personal],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.personal(org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/backStage/user/uploadImg],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.backgroundManagement.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-05-21 18:18:24 -Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.DictController.add()
+2018-05-21 18:18:24 -Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.DictController.remove(java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.DictController.remove(java.lang.Long[])
+2018-05-21 18:18:24 -Mapped "{[/common/dict/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.DictController.update(com.qytkj.BluetoothWaterControl.common.domain.DictDO)
+2018-05-21 18:18:24 -Mapped "{[/common/dict/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 18:18:24 -Mapped "{[/common/dict/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.DictController.save(com.qytkj.BluetoothWaterControl.common.domain.DictDO)
+2018-05-21 18:18:24 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.qytkj.BluetoothWaterControl.common.domain.DictDO> com.qytkj.BluetoothWaterControl.common.controller.DictController.listType()
+2018-05-21 18:18:24 -Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.DictController.dict()
+2018-05-21 18:18:24 -Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-05-21 18:18:24 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.qytkj.BluetoothWaterControl.common.domain.DictDO> com.qytkj.BluetoothWaterControl.common.controller.DictController.listByType(java.lang.String)
+2018-05-21 18:18:24 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.FileController.add()
+2018-05-21 18:18:24 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-05-21 18:18:24 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.remove(java.lang.Long[])
+2018-05-21 18:18:24 -Mapped "{[/common/sysFile/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.update(com.qytkj.BluetoothWaterControl.common.domain.FileDO)
+2018-05-21 18:18:24 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 18:18:24 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.save(com.qytkj.BluetoothWaterControl.common.domain.FileDO)
+2018-05-21 18:18:24 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.info(java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018-05-21 18:18:24 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 18:18:24 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.list()
+2018-05-21 18:18:24 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-05-21 18:18:24 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.generator()
+2018-05-21 18:18:24 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/common/generator/batchCode]}" onto public void com.qytkj.BluetoothWaterControl.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-05-21 18:18:24 -Mapped "{[/common/job/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.JobController.add()
+2018-05-21 18:18:24 -Mapped "{[/common/job/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.remove(java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/common/job/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.remove(java.lang.Long[])
+2018-05-21 18:18:24 -Mapped "{[/common/job/update],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.update(com.qytkj.BluetoothWaterControl.common.domain.TaskDO)
+2018-05-21 18:18:24 -Mapped "{[/common/job/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.common.controller.JobController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 18:18:24 -Mapped "{[/common/job/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.save(com.qytkj.BluetoothWaterControl.common.domain.TaskDO)
+2018-05-21 18:18:24 -Mapped "{[/common/job/info/{id}]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.info(java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/common/job/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.JobController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/common/job/changeJobStatus],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.JobController.changeJobStatus(java.lang.Long,java.lang.String)
+2018-05-21 18:18:24 -Mapped "{[/common/job],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.JobController.taskScheduleJob()
+2018-05-21 18:18:24 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.LogController.remove(java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.common.controller.LogController.log()
+2018-05-21 18:18:24 -Mapped "{[/common/log/list],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.domain.PageDO<com.qytkj.BluetoothWaterControl.common.domain.LogDO> com.qytkj.BluetoothWaterControl.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 18:18:24 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.controller.LogController.batchRemove(java.lang.Long[])
+2018-05-21 18:18:24 -Mapped "{[/error]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-21 18:18:24 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.qytkj.BluetoothWaterControl.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-21 18:18:24 -Mapped "{[/oa/notify/add],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.add()
+2018-05-21 18:18:24 -Mapped "{[/oa/notify/remove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.remove(java.lang.Long)
+2018-05-21 18:18:24 -Mapped "{[/oa/notify/batchRemove],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.remove(java.lang.Long[])
+2018-05-21 18:18:24 -Mapped "{[/oa/notify/update]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.update(com.qytkj.BluetoothWaterControl.oa.domain.NotifyDO)
+2018-05-21 18:18:24 -Mapped "{[/oa/notify/read/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.read(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/oa/notify/list],methods=[GET]}" onto public com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 18:18:24 -Mapped "{[/oa/notify/save],methods=[POST]}" onto public com.qytkj.BluetoothWaterControl.common.utils.R com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.save(com.qytkj.BluetoothWaterControl.oa.domain.NotifyDO)
+2018-05-21 18:18:24 -Mapped "{[/oa/notify/message],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.message()
+2018-05-21 18:18:24 -Mapped "{[/oa/notify/selfList],methods=[GET]}" onto com.qytkj.BluetoothWaterControl.common.utils.PageUtils com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.selfList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-21 18:18:24 -Mapped "{[/oa/notify/edit/{id}],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-05-21 18:18:24 -Mapped "{[/oa/notify],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.oaNotify()
+2018-05-21 18:18:24 -Mapped "{[/oa/notify/selfNotify],methods=[GET]}" onto java.lang.String com.qytkj.BluetoothWaterControl.oa.controller.NotifyController.selefNotify()
+2018-05-21 18:18:24 -Mapped "{[/operUser/getAddress],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.qytkj.BluetoothWaterControl.operation.controller.OperUserController.getAddress()
+2018-05-21 18:18:24 -Mapped "{[/operUser/getUser],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.qytkj.BluetoothWaterControl.operation.controller.OperUserController.getUser()
+2018-05-21 18:18:24 -Mapped "{[/operUser/login],methods=[GET]}" onto public java.lang.String com.qytkj.BluetoothWaterControl.operation.controller.OperUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2018-05-21 18:18:24 -Mapped "{[/operUser/updatePassword],methods=[POST]}" onto public java.lang.Integer com.qytkj.BluetoothWaterControl.operation.controller.OperUserController.updatePassword(java.lang.String,java.lang.String)
+2018-05-21 18:18:24 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-05-21 18:18:24 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-21 18:18:24 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-21 18:18:24 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-21 18:18:24 -Initializing ExecutorService  'messageBrokerTaskScheduler'
+2018-05-21 18:18:24 -Mapped URL path [/endpointChat/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2018-05-21 18:18:24 -Initializing ExecutorService  'brokerChannelExecutor'
+2018-05-21 18:18:24 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b226d13: startup date [Mon May 21 18:18:21 CST 2018]; root of context hierarchy
+2018-05-21 18:18:24 -Mapped URL path [/files/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-21 18:18:24 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-21 18:18:24 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-21 18:18:24 -Detected @ExceptionHandler methods in BDExceptionHandler
+2018-05-21 18:18:24 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-21 18:18:25 -
+
+Using default security password: e825d3ab-e59c-471d-8adc-b24deaff8d0b
+
+2018-05-21 18:18:25 -Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2018-05-21 18:18:25 -Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@551d59ac, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66f01ea9, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d3209ee, org.springframework.security.web.header.HeaderWriterFilter@52bf40f8, org.springframework.security.web.csrf.CsrfFilter@22682fb4, org.springframework.security.web.authentication.logout.LogoutFilter@58ed5626, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a032ba5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@293069d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c4d5b04, org.springframework.security.web.session.SessionManagementFilter@7ec48c0d, org.springframework.security.web.access.ExceptionTranslationFilter@503cf74a]
+2018-05-21 18:18:25 -LiveReload server is running on port 35729
+2018-05-21 18:18:25 -Registering beans for JMX exposure on startup
+2018-05-21 18:18:25 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-21 18:18:25 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-21 18:18:25 -Starting beans in phase 2147483647
+2018-05-21 18:18:25 -Context refreshed
+2018-05-21 18:18:25 -Found 1 custom documentation plugin(s)
+2018-05-21 18:18:25 -Scanning for api listing references
+2018-05-21 18:18:25 -Generating unique operation named: removeUsingPOST_1
+2018-05-21 18:18:25 -Generating unique operation named: addUsingGET_1
+2018-05-21 18:18:25 -Generating unique operation named: editUsingGET_1
+2018-05-21 18:18:25 -Generating unique operation named: listUsingGET_1
+2018-05-21 18:18:25 -Generating unique operation named: removeUsingPOST_2
+2018-05-21 18:18:25 -Generating unique operation named: removeUsingPOST_3
+2018-05-21 18:18:25 -Generating unique operation named: saveUsingPOST_1
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingGET_1
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingHEAD_1
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingPOST_1
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingPUT_1
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingPATCH_1
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingDELETE_1
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingOPTIONS_1
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingTRACE_1
+2018-05-21 18:18:25 -Generating unique operation named: addUsingGET_2
+2018-05-21 18:18:25 -Generating unique operation named: editUsingGET_2
+2018-05-21 18:18:25 -Generating unique operation named: listUsingGET_2
+2018-05-21 18:18:25 -Generating unique operation named: removeUsingPOST_4
+2018-05-21 18:18:25 -Generating unique operation named: removeUsingPOST_5
+2018-05-21 18:18:25 -Generating unique operation named: saveUsingPOST_2
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingGET_2
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingHEAD_2
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingPOST_2
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingPUT_2
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingPATCH_2
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingDELETE_2
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingOPTIONS_2
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingTRACE_2
+2018-05-21 18:18:25 -Generating unique operation named: editUsingGET_3
+2018-05-21 18:18:25 -Generating unique operation named: listUsingGET_3
+2018-05-21 18:18:25 -Generating unique operation named: updateUsingPOST_3
+2018-05-21 18:18:25 -Generating unique operation named: addUsingGET_3
+2018-05-21 18:18:25 -Generating unique operation named: editUsingGET_4
+2018-05-21 18:18:25 -Generating unique operation named: infoUsingGET_1
+2018-05-21 18:18:25 -Generating unique operation named: infoUsingHEAD_1
+2018-05-21 18:18:25 -Generating unique operation named: infoUsingPOST_1
+2018-05-21 18:18:25 -Generating unique operation named: infoUsingPUT_1
+2018-05-21 18:18:25 -Generating unique operation named: infoUsingPATCH_1
+2018-05-21 18:18:25 -Generating unique operation named: infoUsingDELETE_1
+2018-05-21 18:18:25 -Generating unique operation named: infoUsingOPTIONS_1
+2018-05-21 18:18:25 -Generating unique operation named: infoUsingTRACE_1
+2018-05-21 18:18:25 -Generating unique operation named: listUsingGET_4
+2018-05-21 18:18:26 -Generating unique operation named: removeUsingPOST_6
+2018-05-21 18:18:26 -Generating unique operation named: removeUsingPOST_7
+2018-05-21 18:18:26 -Generating unique operation named: saveUsingPOST_3
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingPOST_4
+2018-05-21 18:18:26 -Generating unique operation named: listUsingGET_5
+2018-05-21 18:18:26 -Generating unique operation named: removeUsingPOST_8
+2018-05-21 18:18:26 -Generating unique operation named: welcomeUsingGET_1
+2018-05-21 18:18:26 -Generating unique operation named: addUsingGET_4
+2018-05-21 18:18:26 -Generating unique operation named: editUsingGET_5
+2018-05-21 18:18:26 -Generating unique operation named: listUsingGET_6
+2018-05-21 18:18:26 -Generating unique operation named: removeUsingPOST_9
+2018-05-21 18:18:26 -Generating unique operation named: saveUsingPOST_4
+2018-05-21 18:18:26 -Generating unique operation named: treeUsingGET_1
+2018-05-21 18:18:26 -Generating unique operation named: treeUsingGET_2
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingPOST_5
+2018-05-21 18:18:26 -Generating unique operation named: batchRemoveUsingPOST_1
+2018-05-21 18:18:26 -Generating unique operation named: editUsingGET_6
+2018-05-21 18:18:26 -Generating unique operation named: listUsingGET_7
+2018-05-21 18:18:26 -Generating unique operation named: addUsingGET_5
+2018-05-21 18:18:26 -Generating unique operation named: editUsingGET_7
+2018-05-21 18:18:26 -Generating unique operation named: listUsingGET_8
+2018-05-21 18:18:26 -Generating unique operation named: removeUsingPOST_10
+2018-05-21 18:18:26 -Generating unique operation named: removeUsingPOST_11
+2018-05-21 18:18:26 -Generating unique operation named: saveUsingPOST_5
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingGET_3
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingHEAD_3
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingPOST_6
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingPUT_3
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingPATCH_3
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingDELETE_3
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingOPTIONS_3
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingTRACE_3
+2018-05-21 18:18:26 -Generating unique operation named: loginUsingGET_1
+2018-05-21 18:18:26 -Generating unique operation named: addUsingGET_6
+2018-05-21 18:18:26 -Generating unique operation named: batchRemoveUsingPOST_2
+2018-05-21 18:18:26 -Generating unique operation named: deployUsingPOST_1
+2018-05-21 18:18:26 -Generating unique operation named: listUsingGET_9
+2018-05-21 18:18:26 -Generating unique operation named: removeUsingPOST_12
+2018-05-21 18:18:26 -Generating unique operation named: addUsingGET_7
+2018-05-21 18:18:26 -Generating unique operation named: batchRemoveUsingPOST_3
+2018-05-21 18:18:26 -Generating unique operation named: editUsingGET_8
+2018-05-21 18:18:26 -Generating unique operation named: listUsingGET_10
+2018-05-21 18:18:26 -Generating unique operation named: saveUsingPOST_6
+2018-05-21 18:18:26 -Generating unique operation named: saveUsingPOST_7
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingPOST_7
+2018-05-21 18:18:26 -Generating unique operation named: addUsingGET_8
+2018-05-21 18:18:26 -Generating unique operation named: editUsingGET_9
+2018-05-21 18:18:26 -Generating unique operation named: listUsingGET_11
+2018-05-21 18:18:26 -Generating unique operation named: removeUsingPOST_13
+2018-05-21 18:18:26 -Generating unique operation named: removeUsingPOST_14
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingGET_4
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingHEAD_4
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingPOST_8
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingPUT_4
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingPATCH_4
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingDELETE_4
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingOPTIONS_4
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingTRACE_4
+2018-05-21 18:18:26 -Generating unique operation named: listUsingGET_12
+2018-05-21 18:18:26 -Generating unique operation named: listUsingHEAD_1
+2018-05-21 18:18:26 -Generating unique operation named: listUsingPOST_1
+2018-05-21 18:18:26 -Generating unique operation named: listUsingPUT_1
+2018-05-21 18:18:26 -Generating unique operation named: listUsingPATCH_1
+2018-05-21 18:18:26 -Generating unique operation named: listUsingDELETE_1
+2018-05-21 18:18:26 -Generating unique operation named: listUsingOPTIONS_1
+2018-05-21 18:18:26 -Generating unique operation named: listUsingTRACE_1
+2018-05-21 18:18:26 -Generating unique operation named: listUsingGET_13
+2018-05-21 18:18:26 -Generating unique operation named: addUsingGET_9
+2018-05-21 18:18:26 -Generating unique operation named: batchRemoveUsingPOST_4
+2018-05-21 18:18:26 -Generating unique operation named: editUsingGET_10
+2018-05-21 18:18:26 -Generating unique operation named: listUsingGET_14
+2018-05-21 18:18:26 -Generating unique operation named: removeUsingPOST_15
+2018-05-21 18:18:26 -Generating unique operation named: saveUsingPOST_8
+2018-05-21 18:18:26 -Generating unique operation named: treeUsingGET_3
+2018-05-21 18:18:26 -Generating unique operation named: treeViewUsingGET_1
+2018-05-21 18:18:26 -Generating unique operation named: updateUsingPOST_9
+2018-05-21 18:18:26 -Starting Quartz Scheduler now
+2018-05-21 18:18:26 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2018-05-21 18:18:26 -Starting...
+2018-05-21 18:18:26 -BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-05-21 18:18:26 -Started.
+2018-05-21 18:18:26 -Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-21 18:18:26 -Starting ProtocolHandler ["http-nio-8080"]
+2018-05-21 18:18:26 -Using a shared selector for servlet write/read
+2018-05-21 18:18:26 -Tomcat started on port(s): 8080 (http)
+2018-05-21 18:18:26 -Started BootdoApplication in 5.719 seconds (JVM running for 7746.142)
+2018-05-21 18:19:24 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2018-05-21 18:19:34 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-21 18:19:34 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-21 18:19:34 -FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-05-21 18:19:34 -Enabling session validation scheduler...
+2018-05-21 18:19:34 -[THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-05-21 18:19:34 -[THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-05-21 18:19:34 -[THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-05-21 18:19:34 -[THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-05-21 18:19:34 -[THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-05-21 18:19:34 -[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 3]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 3]: at.pollux.thymeleaf.shiro.dialect.ShiroDialect
+[THYMELEAF]     * Prefix: "shiro"
+[THYMELEAF] * Dialect [3 of 3]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-05-21 18:19:34 -[THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-05-21 18:19:39 -More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [clientInboundChannelExecutor, clientOutboundChannelExecutor, brokerChannelExecutor, messageBrokerTaskScheduler]

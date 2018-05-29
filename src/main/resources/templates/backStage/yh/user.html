@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <!-- Content Wrapper. Contains page content -->
+    <!-- Content Header (Page header) -->
+     <section class="content-header" style="width:100%">
+      <h1>
+        人员信息列表
+        <small>--用户app</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="/homePage"><i class="fa fa-dashboard"></i> 主页</a></li>
+        <li class="active">用户app人员信息列表</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <div class="fixed-table-toolbar">
+					<div class="columns pull-left">
+						<!-- <button shiro:hasPermission="sys:user:add" type="button"
+							class="btn  btn-primary" onclick="add()">
+							<i class="fa fa-plus hidden" aria-hidden="true"></i>添加
+						</button> -->
+						<button shiro:hasPermission="sys:user:batchRemove" type="button"
+							class="btn  btn-danger" onclick="batchRemove()">
+							<i class="fa fa-trash hidden" aria-hidden="true"></i>删除
+						</button>
+						<button  type="button"
+							class="btn  btn-info" onclick="choseDept()">
+							<i class="fa fa-plus hidden" aria-hidden="true"></i>选择部门
+						</button>
+					</div>
+					<div class="columns pull-right">
+						<button class="btn btn-success" onclick="reLoad()">查询</button>
+					</div>
+	
+					<div class="columns pull-right col-md-2 nopadding">
+						<input id="searchName" type="text" class="form-control"
+							placeholder="用户名/账号">
+					</div>
+				</div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="exampleTable" class="table table-bordered table-striped">
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+      <div>
+			<script type="text/javascript">
+				var s_edit_h = 'hidden';
+				var s_remove_h = 'hidden';
+				var s_resetPwd_h = 'hidden';
+			</script>
+		</div>
+		<div shiro:hasPermission="sys:user:edit">
+			<script type="text/javascript">
+				s_edit_h = '';
+			</script>
+		</div>
+		<div shiro:hasPermission="sys:user:remove">
+			<script type="text/javascript">
+				var s_remove_h = '';
+			</script>
+		</div>
+		<div shiro:hasPermission="sys:user:resetPwd">
+			<script type="text/javascript">
+				var s_resetPwd_h = '';
+			</script>
+		</div>
+    </section>
+    <!-- /.content -->
+<!-- page script -->
+<div th:include="include :: footer"></div>
+<!-- Bootstrap 3.3.7 --><!-- 防止页面效果失效 -->
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/appjs/sys/yh/user.js"></script>
+</body>
+</html>

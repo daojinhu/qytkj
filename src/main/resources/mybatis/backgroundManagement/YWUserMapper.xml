@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qytkj.BluetoothWaterControl.backgroundManagement.dao.YWDao">
+
+    <!-- 配置映射字段 -->  
+    <resultMap type="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.YWDO" id="OrdersUserResultMap">  
+        <id property="intId" column="id"/>  
+        <result property="strLoginName" column="vchrAccount"/>
+        <result property="strPassword" column="vchrPassword"/>
+        <result property="strRealName" column="vchrNickname"/>
+        <result property="strStatus" column="intStatus"/>
+        <result property="decAccountBalance" column="decAccountBalance"/>
+        <result property="dateCreateTime" column="createTime"/>
+        <result property="updateTime" column="updateTime"/>
+        <result property="strAdress" column="vchrAddress"/>
+        <result property="intDept_id" column="intDept_id"/>
+    </resultMap>
+
+	<select id="get" resultMap ="OrdersUserResultMap">
+		select `id`,`vchrAccount`,`vchrPassword`,`intStatus`,`vchrNickname`,`decAccountBalance`,`createTime`,`updateTime`,`vchrAddress`,`intDept_id` from yw_tbluser where id = #{value}
+	</select>
+
+	<select id="list" resultMap ="OrdersUserResultMap">
+		select 
+			u.id,
+			u.vchrAccount,
+			u.vchrPassword,
+			u.intStatus,
+			u.vchrNickname,
+			u.decAccountBalance,
+			u.createTime,
+			u.updateTime,
+			u.vchrAddress,
+			u.intDept_id
+			from yw_tbluser u
+        <where>  
+  		  <if test="intId != null and intId != ''"> and id = #{intId} </if>
+  		  <if test="strRealName != null and strRealName != ''"> and vchrNickname like CONCAT('%',#{strRealName},'%') </if>
+  		  <if test="strLoginName != null and strLoginName != ''"> and vchrAccount = #{strLoginName} </if>
+  		  <if test="strPassword != null and strPassword != ''"> and vchrPassword = #{strPassword} </if>
+  		  <if test="deptId != null and deptId != ''"> and intDept_id = #{deptId} </if>
+  		  <if test="strStatus != null and strStatus != ''"> and intStatus = #{strStatus} </if>
+  		  <if test="dateCreateTime != null and dateCreateTime != ''"> and createTime = #{dateCreateTime} </if>
+  		  <if test="updateTime != null and updateTime != ''"> and updateTime = #{updateTime} </if>
+  		  <if test="strAdress != null and strAdress != ''"> and vchrAddress = #{strAdress} </if>
+  		  <if test="decAccountBalance != null"> and decAccountBalance = #{decAccountBalance} </if>
+		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from yw_tbluser
+		 <where>  
+  		  <if test="intId != null and intId != ''"> and id = #{intId} </if>
+  		  <if test="strRealName != null and strRealName != ''"> and vchrNickname like CONCAT('%',#{strRealName},'%') </if>
+  		  <if test="strLoginName != null and strLoginName != ''"> and vchrAccount = #{strLoginName} </if>
+  		  <if test="strPassword != null and strPassword != ''"> and vchrPassword = #{strPassword} </if>
+  		  <if test="deptId != null and deptId != ''"> and intDept_id = #{deptId} </if>
+  		  <if test="strStatus != null and strStatus != ''"> and intStatus = #{strStatus} </if>
+  		  <if test="dateCreateTime != null and dateCreateTime != ''"> and createTime = #{dateCreateTime} </if>
+  		  <if test="updateTime != null and updateTime != ''"> and updateTime = #{updateTime} </if>
+  		  <if test="strAdress != null and strAdress != ''"> and vchrAddress = #{strAdress} </if>
+  		  <if test="decAccountBalance != null"> and decAccountBalance = #{decAccountBalance} </if>
+		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.YWDO" useGeneratedKeys="true" keyProperty="intId">
+		insert into yw_tbluser
+		(
+			`vchrAccount`,`vchrPassword`,`intStatus`,`vchrNickname`,`decAccountBalance`,`createTime`,`updateTime`,`vchrAddress`,`intDept_id`
+		)
+		values
+		(
+			#{strLoginName}, 
+			#{strPassword}, 
+			#{strStatus}, 
+			#{strRealName}, 
+			#{decAccountBalance}, 
+			#{dateCreateTime}, 
+			#{updateTime}, 
+			#{strAdress}, 
+			#{intDept_id}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.qytkj.BluetoothWaterControl.backgroundManagement.domain.YWDO">
+		update yw_tbluser 
+		<set>
+			<if test="strLoginName != null">`vchrAccount` = #{strLoginName}, </if>
+			<if test="strPassword != null">`vchrPassword` = #{strPassword}, </if>
+			<if test="strStatus != null">`intStatus` = #{strStatus}, </if>
+			<if test="strRealName != null">`vchrNickname` = #{strRealName}, </if>
+			<if test="decAccountBalance != null">`decAccountBalance` = #{decAccountBalance}, </if>
+			<if test="dateCreateTime != null">`createTime` = #{dateCreateTime}, </if>
+			<if test="updateTime != null">`updateTime` = #{updateTime}, </if>
+			<if test="strAdress != null">`vchrAddress` = #{strAdress}, </if>
+			<if test="intDept_id != null">`intDept_id` = #{intDept_id}</if>
+		</set>
+		where id = #{intId}
+	</update>
+	
+	<delete id="remove">
+		delete from yw_tbluser where id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from yw_tbluser where id in 
+		<foreach item="intId" collection="array" open="(" separator="," close=")">
+			#{intId}
+		</foreach>
+	</delete>
+
+	<select id="listAllDept" resultType="long">
+		select DISTINCT intDept_id from yw_tbluser
+	</select>
+</mapper>
