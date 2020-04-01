@@ -1,16 +1,16 @@
 package com.qytkj.BluetoothWaterControl.operation.common;
 
 public class Configure {
-	private static String key = "d5LD2fGg1L0erFFygmyDiSDQtYc35LI7";
+	private static String key = "";
 
 	//url
 	private static String sessionKeyUrl ="https://api.weixin.qq.com/sns/jscode2session";
 	//小程序ID	
-	private static String appID = "wx8eac7f97ba6c97a2";
+	private static String appID = "";
 	//商户号
-	private static String mch_id = "1279245901";
+	private static String mch_id = "";
 	//secret
-	private static String secret = "9b3857541cf6b4665ee411c85830fcbb";
+	private static String secret = "";
 	//授权码模式
 	private static String grantType = "authorization_code";
 	
